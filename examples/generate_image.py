@@ -1,5 +1,5 @@
 """
-Vistella AI Image Generation - Python SDK Quickstart
+Vistella AI Visual Generation - Python SDK Quickstart
 Docs: https://www.vistella.xyz/docs
 """
 
@@ -12,7 +12,7 @@ API_KEY = os.getenv("VISTELLA_API_KEY")
 BASE_URL = "https://www.vistella.xyz/api/v1"
 
 
-def generate_image(prompt: str, model: str = "gpt-image-2", aspect_ratio: str = "16:9") -> str:
+def generate_image(prompt: str, aspect_ratio: str = "16:9") -> str:
     if not API_KEY:
         print("[Error] VISTELLA_API_KEY environment variable is not set.")
         print("Obtain your key from https://www.vistella.xyz/dashboard/settings")
@@ -25,12 +25,11 @@ def generate_image(prompt: str, model: str = "gpt-image-2", aspect_ratio: str = 
 
     # 1. Submit async task
     payload = {
-        "model": model,
         "prompt": prompt,
         "aspect_ratio": aspect_ratio
     }
 
-    print(f"Submitting task to Vistella (model: {model})...")
+    print("Submitting visual generation task to Vistella...")
     res = requests.post(f"{BASE_URL}/tasks", json=payload, headers=headers)
     if res.status_code != 200:
         raise RuntimeError(f"Submission failed: {res.status_code} {res.text}")
@@ -64,5 +63,5 @@ def generate_image(prompt: str, model: str = "gpt-image-2", aspect_ratio: str = 
 
 if __name__ == "__main__":
     prompt = "A futuristic eco-city built into a lush canyon, solar glass bridges, hanging botanical gardens, 8k"
-    url = generate_image(prompt=prompt, model="gpt-image-2", aspect_ratio="16:9")
+    url = generate_image(prompt=prompt, aspect_ratio="16:9")
     print("\nView your result at:", url)

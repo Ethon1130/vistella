@@ -1,5 +1,5 @@
 #!/bin/bash
-# Vistella Image API - cURL Quickstart
+# Vistella Visual API - cURL Quickstart
 
 # 1. Replace with your actual API key
 export VISTELLA_API_KEY="your_api_key_here"
@@ -10,7 +10,6 @@ RESPONSE=$(curl -s -X POST "https://www.vistella.xyz/api/v1/tasks" \
   -H "Authorization: Bearer ${VISTELLA_API_KEY}" \
   -H "Content-Type: application/json" \
   -d '{
-    "model": "gpt-image-2",
     "prompt": "Cinematic portrait of a cyberpunk wanderer in rainy Neo-Tokyo, 8k",
     "aspect_ratio": "16:9"
   }')

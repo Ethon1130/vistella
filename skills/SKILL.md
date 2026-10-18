@@ -1,6 +1,6 @@
 ---
 name: vistella-image-gen
-description: Generate and edit high-fidelity AI images using Vistella's unified cloud API (GPT Image 2, FLUX, Qwen, Seedream).
+description: Generate and edit high-fidelity AI images using Vistella's unified visual cloud API.
 version: 1.0.0
 author: Ethon1130
 repository: https://github.com/Ethon1130/vistella
@@ -8,7 +8,7 @@ repository: https://github.com/Ethon1130/vistella
 
 # Vistella Image Generation Skill for AI Agents
 
-Equips AI coding assistants and autonomous agents (such as Claude Code, Cursor, OpenClaw, and AutoGen) with the ability to synthesize, edit, and orchestrate AI image generation tasks via the Vistella platform.
+Equips AI coding assistants and autonomous agents (such as Claude Code, Cursor, OpenClaw, and AutoGen) with the ability to synthesize, edit, and orchestrate AI visual generation tasks via the Vistella platform.
 
 ## 🔑 Authentication
 
@@ -29,8 +29,7 @@ Keys can be generated from the [Vistella Developer Dashboard](https://www.vistel
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `prompt` | string | Yes | Detailed natural language prompt describing the image. |
-| `model` | string | No | Model choice. Options: `gpt-image-2` (default), `flux-schnell`, `qwen-image-2.0`, `seedream-5.0-lite-text-to-image`, `nano-banana-2-lite`. |
-| `aspect_ratio` | string | No | Options: `1:1`, `16:9`, `9:16`, `3:4`, `4:3`, `21:9`. Default: `1:1`. |
+| `aspect_ratio` | string | No | Desired image aspect ratio. Options: `1:1`, `16:9`, `9:16`, `3:4`, `4:3`, `21:9`. Default: `1:1`. |
 | `negative_prompt` | string | No | Elements to exclude or diminish in the generated visual. |
 
 ---
@@ -44,7 +43,6 @@ Content-Type: application/json
 Authorization: Bearer YOUR_API_KEY
 
 {
-  "model": "gpt-image-2",
   "prompt": "Minimalist geometric logo of an origami hummingbird in flight, pure white background, vector style",
   "aspect_ratio": "1:1"
 }

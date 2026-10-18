@@ -1,12 +1,12 @@
 /**
- * Vistella AI Image Generation - Node.js Fetch Quickstart
+ * Vistella AI Visual Generation - Node.js Fetch Quickstart
  * Docs: https://www.vistella.xyz/docs
  */
 
 const API_KEY = process.env.VISTELLA_API_KEY;
 const BASE_URL = "https://www.vistella.xyz/api/v1";
 
-async function generateImage({ prompt, model = "gpt-image-2", aspectRatio = "16:9" }) {
+async function generateImage({ prompt, aspectRatio = "16:9" }) {
   if (!API_KEY) {
     console.error("[Error] VISTELLA_API_KEY environment variable is not set.");
     console.error("Obtain your key from https://www.vistella.xyz/dashboard/settings");
@@ -19,12 +19,11 @@ async function generateImage({ prompt, model = "gpt-image-2", aspectRatio = "16:
   };
 
   // 1. Submit task
-  console.log(`Submitting task to Vistella (${model})...`);
+  console.log("Submitting visual task to Vistella...");
   const createRes = await fetch(`${BASE_URL}/tasks`, {
     method: "POST",
     headers,
     body: JSON.stringify({
-      model,
       prompt,
       aspect_ratio: aspectRatio,
     }),
@@ -58,7 +57,6 @@ async function generateImage({ prompt, model = "gpt-image-2", aspectRatio = "16:
 // Run example
 generateImage({
   prompt: "Minimalist glowing geometric crystal sculpture on wet dark stone, volumetric beam of blue light, 8k",
-  model: "flux-schnell",
   aspectRatio: "1:1",
 })
   .then((url) => console.log("\nImage output URL:", url))
