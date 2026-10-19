@@ -3,7 +3,7 @@
 Vistella Visual Prompt Builder (CLI)
 ===================================
 A lightweight, zero-dependency interactive tool to compose production-grade
-prompts for AI visual creation on Vistella (https://www.vistella.xyz/playground).
+prompts for AI visual creation on Vistella (https://www.vistella.xyz/en/playground).
 Supports English, 简体中文, and 繁體中文.
 """
 
@@ -26,7 +26,7 @@ TEXTS = {
         "negative": "🛡️ RECOMMENDED NEGATIVE PROMPT:",
         "ratio_rec": "📐 RECOMMENDED RATIO: {ratio} ({label})",
         "launch": "👉 OPEN DIRECTLY IN VISTELLA PLAYGROUND:",
-        "prefix": "https://www.vistella.xyz/playground",
+        "prefix": "https://www.vistella.xyz/en/playground",
     },
     "2": {
         "title": "🌌 Vistella 提示词命令行拼装工具 (CLI)",

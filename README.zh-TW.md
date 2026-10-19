@@ -12,9 +12,13 @@
 
 🌐 **多語言 / Languages:** [English](README.md) • [简体中文](README.zh-CN.md) • **繁體中文**
 
-[**🌐 立即打開 Web 創作台**](https://www.vistella.xyz/zh/playground?utm_source=github&utm_medium=repo_cta_zh_tw) • [**📚 提示詞工程手冊**](guides/prompt_engineering_handbook.md) • [**🎨 精選場景詞庫**](#-精選場景提示詞寶庫) • [**🛠️ 互動式工具**](#️-本地互動式提示詞工作室) • [**🤝 社群貢獻**](CONTRIBUTING.md)
+[**🌐 立即打開 Web 創作台**](https://www.vistella.xyz/zh/playground?utm_source=github&utm_medium=repo_cta_zh_tw) • [**🖼️ 圖像提示詞畫廊**](prompts/README.zh-TW.md) • [**📚 提示詞工程手冊**](guides/prompt_engineering_handbook.md) • [**🎨 精選場景詞庫**](#-精選場景提示詞寶庫) • [**🛠️ 互動式工具**](#️-本地互動式提示詞工作室) • [**🤝 社群貢獻**](CONTRIBUTING.md)
 
 </div>
+
+![晚霞雲海上方帶瀑布的苔蘚浮空城堡，奇幻提示詞的參考圖](prompts/assets/floating-citadel-concept.webp)
+
+*瀏覽[圖像提示詞畫廊](prompts/README.zh-TW.md)。這張參考圖由 imagegen 為本倉庫製作，並非 Vistella 創作台的實測結果。*
 
 ---
 
@@ -27,6 +31,7 @@
 - 🎨 **細分場景提示詞寶庫**：人像寫真、商業靜物、空間建築、數位動漫插畫的高分實戰配方。
 - 🛡️ **負向排除詞典**：專門解決人像假面假手、畫面雜質、產品刮痕與透視畸變。
 - 🛠️ **本地互動式工作台**：單檔案 Web 版提示詞工作室（免安裝雙擊即用，支援中/英/繁切換）與 Python 互動式生成器，支援一鍵直達 Vistella 工作區生成。
+- 🖼️ **圖像提示詞畫廊**：四張場景參考圖、可複製配方及[發布素材](prompts/distribution-kit.md)。
 
 ---
 
@@ -38,6 +43,8 @@ vistella/
 │   ├── prompt_engineering_handbook.md   # 《提示詞工程權威手冊》：佈光、鏡頭、色彩、構圖
 │   └── aspect_ratio_guide.md           # 《畫幅比例與構圖指南》：1:1、3:4、4:5、16:9、21:9
 ├── prompts/                            # 🎨 細分領域實戰提示詞寶庫
+│   ├── README.zh-TW.md                  # 🖼️ 參考圖與提示詞入口
+│   ├── assets/                          # 📷 參考圖與分享素材
 │   ├── portraits_and_people.md         # 👤 人像寫真：北歐高訂、復古底片、賽博行者、黑白電影
 │   ├── commercial_and_products.md      # 🛍️ 商業靜物：輕奢香水、3D 機械手錶、植萃精華、概念跑鞋
 │   ├── architecture_and_spaces.md      # 🏛️ 空間建築：野獸派清水模、枯山水庭院、北歐廚房
@@ -79,6 +86,7 @@ vistella/
 | **🏛️ 空間建築與室內** | 懸崖野獸派清水模別墅、雨季日式庭院、極簡斯堪地那維亞廚房、荒漠夯土避難所 | [瀏覽建築詞庫 →](prompts/architecture_and_spaces.md) |
 | **🎨 數位藝術與動漫** | 新海誠夏日積雨雲、吉卜力溪邊水車、80 年代復古合成波公路、黏土微縮世界 | [瀏覽插畫詞庫 →](prompts/digital_art_and_illustration.md) |
 | **🛡️ 負向排除詞典** | 針對人像肢體、皮膚塑料感、產品指紋反光、建築透視變形的專用屏蔽詞 | [查看負向詞庫 →](prompts/negative_prompts.md) |
+| **🖼️ 圖像提示詞畫廊** | 肖像、產品、建築、奇幻四類參考圖與配方 | [瀏覽畫廊 →](prompts/README.zh-TW.md) |
 
 ---
 

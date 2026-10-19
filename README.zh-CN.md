@@ -12,9 +12,13 @@
 
 🌐 **多语言 / Languages:** [English](README.md) • **简体中文** • [繁體中文](README.zh-TW.md)
 
-[**🌐 立即打开 Web 创作台**](https://www.vistella.xyz/zh/playground?utm_source=github&utm_medium=repo_cta_zh) • [**📚 提示词工程手册**](guides/prompt_engineering_handbook.md) • [**🎨 精选场景词库**](#-精选场景提示词宝库) • [**🛠️ 交互式工具**](#️-本地交互式提示词工作室) • [**🤝 社区贡献**](CONTRIBUTING.md)
+[**🌐 立即打开 Web 创作台**](https://www.vistella.xyz/zh/playground?utm_source=github&utm_medium=repo_cta_zh) • [**🖼️ 配图提示词画廊**](prompts/README.zh-CN.md) • [**📚 提示词工程手册**](guides/prompt_engineering_handbook.md) • [**🎨 精选场景词库**](#-精选场景提示词宝库) • [**🛠️ 交互式工具**](#️-本地交互式提示词工作室) • [**🤝 社区贡献**](CONTRIBUTING.md)
 
 </div>
+
+![晚霞云海上方带瀑布的苔藓浮空城堡，奇幻提示词的参考图](prompts/assets/floating-citadel-concept.webp)
+
+*浏览[配图提示词画廊](prompts/README.zh-CN.md)。这张参考图由 imagegen 为本仓库制作，不是 Vistella 创作台的实测结果。*
 
 ---
 
@@ -27,6 +31,7 @@
 - 🎨 **细分场景提示词宝库**：人像写真、商业静物、空间建筑、数字动漫插画的高分实战配方。
 - 🛡️ **负向排除词典**：专治人像假面假手、画面杂质、产品划痕与透视畸变。
 - 🛠️ **本地交互式工作台**：单文件 Web 版提示词工作室（免安装双击即用）与 Python 交互式生成器，支持一键直达 Vistella 工作区生成。
+- 🖼️ **配图提示词画廊**：四张场景参考图、可复制配方和[发布素材](prompts/distribution-kit.md)。
 
 ---
 
@@ -38,6 +43,8 @@ vistella/
 │   ├── prompt_engineering_handbook.md   # 《提示词工程权威手册》：布光、镜头、色彩、构图
 │   └── aspect_ratio_guide.md           # 《画幅比例与构图指南》：1:1、3:4、4:5、16:9、21:9
 ├── prompts/                            # 🎨 细分领域实战提示词宝库
+│   ├── README.zh-CN.md                  # 🖼️ 参考图与提示词入口
+│   ├── assets/                          # 📷 参考图与分享素材
 │   ├── portraits_and_people.md         # 👤 人像写真：北欧高定、复古胶片、赛博行者、黑白电影
 │   ├── commercial_and_products.md      # 🛍️ 商业静物：轻奢香水、3D 机械手表、植萃精华、概念跑鞋
 │   ├── architecture_and_spaces.md      # 🏛️ 空间建筑：野兽派混凝土、枯山水庭院、北欧厨房
@@ -79,6 +86,7 @@ vistella/
 | **🏛️ 空间建筑与室内** | 悬崖野兽派混凝土别墅、雨季日式庭院、极简斯堪的纳维亚厨房、荒漠夯土庇护所 | [浏览建筑词库 →](prompts/architecture_and_spaces.md) |
 | **🎨 数字艺术与动漫** | 新海诚夏日积雨云、吉卜力溪边水车、80 年代复古合成波公路、黏土微缩世界 | [浏览插画词库 →](prompts/digital_art_and_illustration.md) |
 | **🛡️ 负向排除词典** | 针对人像肢体、皮肤塑料感、产品指纹反光、建筑透视变形的专用屏蔽词 | [查看负向词库 →](prompts/negative_prompts.md) |
+| **🖼️ 配图提示词画廊** | 肖像、产品、建筑、奇幻四类参考图与配方 | [浏览画廊 →](prompts/README.zh-CN.md) |
 
 ---
 

@@ -2,7 +2,7 @@
 
 Negative prompts help steer generation away from common artifacts, plastic-looking skin, anatomical errors, and unwanted clutter.
 
-You can paste these negative prompt recipes directly into the **Negative Prompt** input in the [Vistella Playground](https://www.vistella.xyz/playground?utm_source=github&utm_medium=negative_prompts_guide).
+You can paste these negative prompt recipes directly into the **Negative Prompt** input in the [Vistella Playground](https://www.vistella.xyz/en/playground?utm_source=github&utm_medium=negative_prompts_guide).
 
 ---
 
@@ -63,4 +63,4 @@ mutated anatomy, bad hands, missing fingers, extra eyes, muddy colors, bad linea
 
 1. **Keep Negative Prompts Focused**: Adding 200+ negative tokens can dilute prompt fidelity and wash out natural color grading. 15-25 targeted tokens are ideal.
 2. **Complement with Lighting**: If an image feels washed out, reinforce lighting descriptors in your main prompt (e.g., *"volumetric rim light"*, *"deep contrasting shadows"*) rather than over-relying on negative keywords.
-3. **Test in Real Time**: Experiment with different combinations in the [Vistella Web App](https://www.vistella.xyz/playground?utm_source=github&utm_medium=negative_prompts_footer).
+3. **Test in Real Time**: Experiment with different combinations in the [Vistella Web App](https://www.vistella.xyz/en/playground?utm_source=github&utm_medium=negative_prompts_footer).

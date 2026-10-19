@@ -1,6 +1,6 @@
 # 🏛️ Architecture & Spatial Design Prompt Recipes
 
-Curated formulas for interior design, modern pavilions, urban planning concepts, and architectural visualizations on [Vistella (vistella.xyz)](https://www.vistella.xyz/playground?utm_source=github&utm_medium=arch_recipes).
+Curated formulas for interior design, modern pavilions, urban planning concepts, and architectural visualizations on [Vistella (vistella.xyz)](https://www.vistella.xyz/en/playground?utm_source=github&utm_medium=arch_recipes).
 
 ---
 
@@ -14,7 +14,7 @@ Curated formulas for interior design, modern pavilions, urban planning concepts,
 Architectural photography of an ultra-modern brutalist concrete residence cantilevered over a rugged misty ocean cliff, board-formed raw concrete textures with visible wood grain imprints, vast frameless glass walls revealing warm minimalist interior light, infinity reflection pool merging with the gray sea horizon at dusk, Architectural Digest cover, shot on 24mm tilt-shift lens, straight vertical lines.
 ```
 
-👉 [Run this Recipe on Vistella Playground →](https://www.vistella.xyz/playground?utm_source=github&utm_medium=recipe_arch_brutalist)
+👉 [Run this Recipe on Vistella Playground →](https://www.vistella.xyz/en/playground?utm_source=github&utm_medium=recipe_arch_brutalist)
 
 ---
 
@@ -28,7 +28,7 @@ Architectural photography of an ultra-modern brutalist concrete residence cantil
 Traditional modern Japanese courtyard pavilion during gentle drizzling rain, blackened Shou Sugi Ban timber structure, sliding shoji paper screens opened to reveal an illuminated moss garden, rain chains (kusari-doi) guiding cascading water into a stone basin, soft amber lantern glow casting gentle reflections on wet polished river pebbles, peaceful zen meditation sanctuary.
 ```
 
-👉 [Run this Recipe on Vistella Playground →](https://www.vistella.xyz/playground?utm_source=github&utm_medium=recipe_arch_japan)
+👉 [Run this Recipe on Vistella Playground →](https://www.vistella.xyz/en/playground?utm_source=github&utm_medium=recipe_arch_japan)
 
 ---
 
@@ -42,7 +42,7 @@ Traditional modern Japanese courtyard pavilion during gentle drizzling rain, bla
 Interior design photography of a spacious minimalist Scandinavian kitchen, fluted bleached white oak cabinet joinery, monolithic seamless Arabescato marble kitchen island with soft gray veining, warm morning sunlight casting sharp diagonal linear shadows across chevron light hardwood flooring, minimalist ceramic vases on open floating shelves, clean architectural spatial depth.
 ```
 
-👉 [Run this Recipe on Vistella Playground →](https://www.vistella.xyz/playground?utm_source=github&utm_medium=recipe_arch_kitchen)
+👉 [Run this Recipe on Vistella Playground →](https://www.vistella.xyz/en/playground?utm_source=github&utm_medium=recipe_arch_kitchen)
 
 ---
 
@@ -56,7 +56,7 @@ Interior design photography of a spacious minimalist Scandinavian kitchen, flute
 Low-slung contemporary desert sanctuary embedded seamlessly into red sandstone rock formations, layered horizontal strata of compressed rammed-earth walls in terracotta and sand hues, perforated Corten steel sunscreens casting intricate shadow patterns along open-air colonnades, desert agaves and yucca in gravel courtyards, warm amber desert sunset glow, wallpaper magazine feature.
 ```
 
-👉 [Run this Recipe on Vistella Playground →](https://www.vistella.xyz/playground?utm_source=github&utm_medium=recipe_arch_desert)
+👉 [Run this Recipe on Vistella Playground →](https://www.vistella.xyz/en/playground?utm_source=github&utm_medium=recipe_arch_desert)
 
 ---
 
@@ -70,7 +70,7 @@ Low-slung contemporary desert sanctuary embedded seamlessly into red sandstone r
 Interior of a soaring 19th-century Victorian botanical conservatory with arched dark iron lattice framework and curved glass roof panels, dense cascading tropical monsteras, towering palms, and hanging aerial roots, dramatic volumetric sunbeams breaking through rising morning water mist, wet brick pathway winding through lush emerald foliage, cinematic atmosphere.
 ```
 
-👉 [Run this Recipe on Vistella Playground →](https://www.vistella.xyz/playground?utm_source=github&utm_medium=recipe_arch_glasshouse)
+👉 [Run this Recipe on Vistella Playground →](https://www.vistella.xyz/en/playground?utm_source=github&utm_medium=recipe_arch_glasshouse)
 
 ---
 

@@ -1,6 +1,6 @@
 # 🎨 Vistella Prompt Recipes & Visual Engineering Guide
 
-This collection contains curated, battle-tested prompt recipes optimized for high-fidelity visual generation on [Vistella (vistella.xyz)](https://www.vistella.xyz?utm_source=github&utm_medium=prompts_guide).
+This collection contains curated, copyable starting points for visual generation on [Vistella (vistella.xyz)](https://www.vistella.xyz?utm_source=github&utm_medium=prompts_guide). See the [visual gallery](README.md) for reference images. Those images were made separately with imagegen and are not Vistella Playground results.
 
 ---
 
@@ -20,7 +20,7 @@ $$\text{Output} = \text{Subject} + \text{Environment/Scene} + \text{Lighting/Moo
 ```text
 Medium close-up portrait of a 28-year-old Danish woman with freckles, wearing an oversized beige wool knit sweater. Standing by a tall loft window during an overcast morning. Soft diffused natural light, muted earth tones, 50mm f/1.4 lens bokeh, authentic skin texture with microscopic pores, filmic aesthetic, 8k resolution.
 ```
-👉 [Try on Vistella Playground](https://www.vistella.xyz/playground?utm_source=github&utm_medium=recipe_portrait_1)
+👉 [Try on Vistella Playground](https://www.vistella.xyz/en/playground?utm_source=github&utm_medium=recipe_portrait_1)
 
 ### 1.2 Neon Street Portrait
 - **Visual Style:** Cinematic Night Scene
@@ -28,7 +28,22 @@ Medium close-up portrait of a 28-year-old Danish woman with freckles, wearing an
 ```text
 Cinematic nighttime portrait of an East Asian male streetwear designer standing in Shinjuku rain. Wet glossy reflections, vibrant magenta and cyan neon backlight, shallow depth of field, mist hanging in ambient light. Shot on Sony A7R V with 85mm f/1.2 G Master lens, cinematic color grading.
 ```
-👉 [Try on Vistella Playground](https://www.vistella.xyz/playground?utm_source=github&utm_medium=recipe_portrait_2)
+👉 [Try on Vistella Playground](https://www.vistella.xyz/en/playground?utm_source=github&utm_medium=recipe_portrait_2)
+
+### 1.3 Architect at Work
+
+- **Visual Style:** Editorial architectural portrait
+- **Recommended Aspect Ratio:** `3:4`
+
+```text
+An East Asian female architect working at a drafting table in an ultra-modern concrete studio. Medium portrait with natural expression, simple neutral clothing and architectural models in the background. Soft morning sidelight through a tall window, faint dust motes, authentic skin texture, straight architectural lines, restrained neutral color grade and subtle film grain. No logos or readable text.
+```
+
+<img src="assets/architect-editorial-portrait.webp" alt="Architect sketching at a table in a sunlit concrete studio" width="360">
+
+*Reference image made for this repository with imagegen; your result will vary.*
+
+👉 [Try on Vistella Playground](https://www.vistella.xyz/en/playground?utm_source=github&utm_medium=prompt_recipe&utm_campaign=visual_recipes&utm_content=architect)
 
 ---
 
@@ -40,7 +55,11 @@ Cinematic nighttime portrait of an East Asian male streetwear designer standing 
 ```text
 A frosted amber glass skincare bottle placed on a sculpted travertine stone slab, surrounded by dried botanical twigs and fine white sand. Soft warm morning sunlight casting gentle elongated shadows. High-end magazine commercial photography, crisp focus, clean negative space, studio perfection.
 ```
-👉 [Try on Vistella Playground](https://www.vistella.xyz/playground?utm_source=github&utm_medium=recipe_product_1)
+<img src="assets/amber-skincare-still-life.webp" alt="Amber serum bottle on travertine in warm morning light" width="400">
+
+*Reference image made for this repository with imagegen; your result will vary.*
+
+👉 [Try on Vistella Playground](https://www.vistella.xyz/en/playground?utm_source=github&utm_medium=prompt_recipe&utm_campaign=visual_recipes&utm_content=skincare)
 
 ### 2.2 Modern High-Tech Acoustics
 - **Visual Style:** Exploded 3D Industrial Design
@@ -48,7 +67,7 @@ A frosted amber glass skincare bottle placed on a sculpted travertine stone slab
 ```text
 Floating matte black wireless over-ear headphones, exploded acoustic engineering visual with subtle golden internal components, dark slate background, volumetric rim lighting, crisp raytraced carbon fiber textures, KeyShot render, 8k detail.
 ```
-👉 [Try on Vistella Playground](https://www.vistella.xyz/playground?utm_source=github&utm_medium=recipe_product_2)
+👉 [Try on Vistella Playground](https://www.vistella.xyz/en/playground?utm_source=github&utm_medium=recipe_product_2)
 
 ---
 
@@ -60,7 +79,11 @@ Floating matte black wireless over-ear headphones, exploded acoustic engineering
 ```text
 Modern Japanese architecture pavilion nestled in a tranquil bamboo grove. Slatted cedar wood exterior, floor-to-ceiling glass doors opening onto an illuminated pebble water terrace, twilight ambiance, soft golden interior warmth, architectural digest cover photography.
 ```
-👉 [Try on Vistella Playground](https://www.vistella.xyz/playground?utm_source=github&utm_medium=recipe_arch_1)
+<img src="assets/bamboo-zen-pavilion.webp" alt="Cedar and glass pavilion beside a reflecting pond in a bamboo grove at twilight" width="680">
+
+*Reference image made for this repository with imagegen; your result will vary.*
+
+👉 [Try on Vistella Playground](https://www.vistella.xyz/en/playground?utm_source=github&utm_medium=prompt_recipe&utm_campaign=visual_recipes&utm_content=pavilion)
 
 ---
 
@@ -72,7 +95,11 @@ Modern Japanese architecture pavilion nestled in a tranquil bamboo grove. Slatte
 ```text
 A massive floating moss-covered ancient castle ruin hovering among drifting pastel clouds at sunset. Waterfalls cascading into empty sky, distant flocks of migrating white birds, glowing mystical runes etched into stone, Makoto Shinkai anime aesthetic, lush vibrant color palette, epic fantasy concept art.
 ```
-👉 [Try on Vistella Playground](https://www.vistella.xyz/playground?utm_source=github&utm_medium=recipe_art_1)
+<img src="assets/floating-citadel-concept.webp" alt="Ancient floating citadel with waterfalls over pastel sunset clouds" width="680">
+
+*Reference image made for this repository with imagegen; your result will vary.*
+
+👉 [Try on Vistella Playground](https://www.vistella.xyz/en/playground?utm_source=github&utm_medium=prompt_recipe&utm_campaign=visual_recipes&utm_content=citadel)
 
 ---
 

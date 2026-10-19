@@ -1,6 +1,6 @@
 # 🎨 Digital Art, Anime & Illustration Prompt Recipes
 
-Curated formulas for anime backgrounds, fantasy worldbuilding, retro aesthetics, and concept illustration on [Vistella (vistella.xyz)](https://www.vistella.xyz/playground?utm_source=github&utm_medium=illustration_recipes).
+Curated formulas for anime backgrounds, fantasy worldbuilding, retro aesthetics, and concept illustration on [Vistella (vistella.xyz)](https://www.vistella.xyz/en/playground?utm_source=github&utm_medium=illustration_recipes).
 
 ---
 
@@ -14,7 +14,7 @@ Curated formulas for anime backgrounds, fantasy worldbuilding, retro aesthetics,
 Breathtaking anime landscape of a rural Japanese train platform overlooking a vast azure ocean during a bright summer afternoon, towering majestic cumulonimbus thunderclouds illuminated by brilliant golden sunlight in an ultra-deep cobalt sky, reflective puddles on platform concrete mirroring the clouds, rustling summer green grass along rusty railroad tracks, Makoto Shinkai aesthetic, 4k anime masterpiece.
 ```
 
-👉 [Run this Recipe on Vistella Playground →](https://www.vistella.xyz/playground?utm_source=github&utm_medium=recipe_art_shinkai)
+👉 [Run this Recipe on Vistella Playground →](https://www.vistella.xyz/en/playground?utm_source=github&utm_medium=recipe_art_shinkai)
 
 ---
 
@@ -28,7 +28,7 @@ Breathtaking anime landscape of a rural Japanese train platform overlooking a va
 Charming rustic countryside stone watermill nestled alongside a sparkling mountain stream, surrounded by blooming field of colorful wildflowers and ancient mossy willow trees, smoke gently rising from a crooked stone chimney, hand-painted watercolor background texture, warm gentle morning sunlight, whimsical peaceful Studio Ghibli animation still.
 ```
 
-👉 [Run this Recipe on Vistella Playground →](https://www.vistella.xyz/playground?utm_source=github&utm_medium=recipe_art_ghibli)
+👉 [Run this Recipe on Vistella Playground →](https://www.vistella.xyz/en/playground?utm_source=github&utm_medium=recipe_art_ghibli)
 
 ---
 
@@ -42,7 +42,7 @@ Charming rustic countryside stone watermill nestled alongside a sparkling mounta
 An iconic vintage red sports car driving down an empty infinite coastal highway towards a massive striped low-poly neon sunset grid, towering neon palm trees silhouetted along the road, reflective wet asphalt, vibrant magenta, purple, and electric cyan color gradient, starry retro twilight sky, 1980s outrun synthwave visual aesthetic.
 ```
 
-👉 [Run this Recipe on Vistella Playground →](https://www.vistella.xyz/playground?utm_source=github&utm_medium=recipe_art_synthwave)
+👉 [Run this Recipe on Vistella Playground →](https://www.vistella.xyz/en/playground?utm_source=github&utm_medium=recipe_art_synthwave)
 
 ---
 
@@ -56,7 +56,7 @@ An iconic vintage red sports car driving down an empty infinite coastal highway 
 Cute isometric 3D miniature floating diorama cube of a cozy winter cabin covered in puffy marshmallow snow, miniature glowing yellow windows, tiny smoking chimney, tiny pine trees with snow blankets, frozen turquoise pond with tiny ice skaters, warm volumetric lighting, soft matte plasticine clay material, clean neutral background, adorable stylized Octane render.
 ```
 
-👉 [Run this Recipe on Vistella Playground →](https://www.vistella.xyz/playground?utm_source=github&utm_medium=recipe_art_isometric)
+👉 [Run this Recipe on Vistella Playground →](https://www.vistella.xyz/en/playground?utm_source=github&utm_medium=recipe_art_isometric)
 
 ---
 
@@ -70,7 +70,7 @@ Cute isometric 3D miniature floating diorama cube of a cozy winter cabin covered
 Dark fantasy concept art of a towering solitary knight in intricately engraved blackened gothic plate armor, standing before the crumbling altar of an ancient ruined cathedral, holding a glowing moonlight broadsword planted into stone, spectral pale blue souls swirling in heavy atmospheric mist, dramatic moonlight streaming through shattered stained glass windows, moody oil painting brushstrokes, Elden Ring aesthetic.
 ```
 
-👉 [Run this Recipe on Vistella Playground →](https://www.vistella.xyz/playground?utm_source=github&utm_medium=recipe_art_dark_fantasy)
+👉 [Run this Recipe on Vistella Playground →](https://www.vistella.xyz/en/playground?utm_source=github&utm_medium=recipe_art_dark_fantasy)
 
 ---
 

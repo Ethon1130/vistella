@@ -1,6 +1,6 @@
 # 👤 Portraits & Character Design Prompt Recipes
 
-Curated formulas for human portraits, expressive character designs, editorial fashion, and street photography on [Vistella (vistella.xyz)](https://www.vistella.xyz/playground?utm_source=github&utm_medium=portrait_recipes).
+Curated formulas for human portraits, expressive character designs, editorial fashion, and street photography on [Vistella (vistella.xyz)](https://www.vistella.xyz/en/playground?utm_source=github&utm_medium=portrait_recipes).
 
 ---
 
@@ -14,7 +14,7 @@ Curated formulas for human portraits, expressive character designs, editorial fa
 Full-body editorial portrait of a tall Scandinavian female model wearing an architectural oversized charcoal wool overcoat, raw minimalist beige studio backdrop, subtle natural posture, soft diffused morning skylight, natural skin pores and subtle freckles, high fashion Vogue magazine cover, neutral color grade, Hasselblad medium format clarity.
 ```
 
-👉 [Run this Recipe on Vistella Playground →](https://www.vistella.xyz/playground?utm_source=github&utm_medium=recipe_portrait_scandi)
+👉 [Run this Recipe on Vistella Playground →](https://www.vistella.xyz/en/playground?utm_source=github&utm_medium=recipe_portrait_scandi)
 
 ---
 
@@ -28,7 +28,7 @@ Full-body editorial portrait of a tall Scandinavian female model wearing an arch
 Candid 1970s retro portrait of a young woman with wavy chestnut hair laughing in a golden wheat field, wearing a vintage mustard knit cardigan, low sun flare creating glowing rim light around her hair, subtle analog film grain, warm nostalgic Kodak Kodachrome color palette, authentic film aesthetic.
 ```
 
-👉 [Run this Recipe on Vistella Playground →](https://www.vistella.xyz/playground?utm_source=github&utm_medium=recipe_portrait_vintage)
+👉 [Run this Recipe on Vistella Playground →](https://www.vistella.xyz/en/playground?utm_source=github&utm_medium=recipe_portrait_vintage)
 
 ---
 
@@ -42,7 +42,7 @@ Candid 1970s retro portrait of a young woman with wavy chestnut hair laughing in
 Cinematic environmental portrait of a street hacker standing under a rain-covered glass awning in futuristic Neo-Seoul at night, holographic umbrella, translucent tech jacket with subtle glowing LED fiber optics, wet pavement reflecting vibrant billboards, volumetric steam rising from street grates, shallow depth of field, sharp eyes, cinematic color contrast.
 ```
 
-👉 [Run this Recipe on Vistella Playground →](https://www.vistella.xyz/playground?utm_source=github&utm_medium=recipe_portrait_cyberpunk)
+👉 [Run this Recipe on Vistella Playground →](https://www.vistella.xyz/en/playground?utm_source=github&utm_medium=recipe_portrait_cyberpunk)
 
 ---
 
@@ -56,7 +56,7 @@ Cinematic environmental portrait of a street hacker standing under a rain-covere
 Dramatic black and white close-up portrait of a weary detective in a fedora hat inside a shadowy office, light streaming through slatted Venetian window blinds creating bold diagonal shadow stripes across face, cigarette smoke curling through the beam of light, intense gaze, rich velvety shadow tones, classic 1940s film noir cinema still.
 ```
 
-👉 [Run this Recipe on Vistella Playground →](https://www.vistella.xyz/playground?utm_source=github&utm_medium=recipe_portrait_noir)
+👉 [Run this Recipe on Vistella Playground →](https://www.vistella.xyz/en/playground?utm_source=github&utm_medium=recipe_portrait_noir)
 
 ---
 
@@ -70,7 +70,7 @@ Dramatic black and white close-up portrait of a weary detective in a fedora hat 
 Intimate documentary portrait of a 70-year-old Japanese ceramic master in his rustic wooden workshop, deep expressive facial wrinkles showing decades of devotion, dust motes floating in ambient sunbeams, holding a freshly shaped damp clay tea bowl, hands covered in clay slips, soft bokeh background with shelves of pottery, tactile realism, authentic storytelling.
 ```
 
-👉 [Run this Recipe on Vistella Playground →](https://www.vistella.xyz/playground?utm_source=github&utm_medium=recipe_portrait_artisan)
+👉 [Run this Recipe on Vistella Playground →](https://www.vistella.xyz/en/playground?utm_source=github&utm_medium=recipe_portrait_artisan)
 
 ---
 
@@ -84,7 +84,7 @@ Intimate documentary portrait of a 70-year-old Japanese ceramic master in his ru
 Extreme beauty macro close-up of a model's eye and cheekbone, dewy glass skin with microscopic natural pores, artistic abstract holographic pearl makeup along the eyelid, delicate natural eyelashes, crisp catchlight in iris, soft pastel gradient studio background, award-winning skincare advertising photography.
 ```
 
-👉 [Run this Recipe on Vistella Playground →](https://www.vistella.xyz/playground?utm_source=github&utm_medium=recipe_portrait_beauty)
+👉 [Run this Recipe on Vistella Playground →](https://www.vistella.xyz/en/playground?utm_source=github&utm_medium=recipe_portrait_beauty)
 
 ---
 

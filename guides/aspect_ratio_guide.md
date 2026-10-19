@@ -2,7 +2,7 @@
 
 Choosing the right aspect ratio before generation fundamentally transforms how the visual model balances negative space, subject scale, and compositional geometry.
 
-All ratios below are natively selectable in the [Vistella Web Playground](https://www.vistella.xyz/playground?utm_source=github&utm_medium=aspect_ratio_guide).
+All ratios below are natively selectable in the [Vistella Web Playground](https://www.vistella.xyz/en/playground?utm_source=github&utm_medium=aspect_ratio_guide).
 
 ---
 
@@ -47,4 +47,4 @@ All ratios below are natively selectable in the [Vistella Web Playground](https:
 
 Toggle seamlessly between these ratios in the left settings panel:
 
-👉 [**Open Vistella Playground with Ratio Selection →**](https://www.vistella.xyz/playground?utm_source=github&utm_medium=ratio_cta)
+👉 [**Open Vistella Playground with Ratio Selection →**](https://www.vistella.xyz/en/playground?utm_source=github&utm_medium=ratio_cta)

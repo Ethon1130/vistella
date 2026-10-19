@@ -1,6 +1,6 @@
 # 📚 The Vistella Visual Prompt Engineering Handbook
 
-A comprehensive, production-grade guide to mastering composition, lighting, camera optics, and aesthetic styling for AI visual creation on [Vistella (vistella.xyz)](https://www.vistella.xyz/playground?utm_source=github&utm_medium=handbook).
+A comprehensive, production-grade guide to mastering composition, lighting, camera optics, and aesthetic styling for AI visual creation on [Vistella (vistella.xyz)](https://www.vistella.xyz/en/playground?utm_source=github&utm_medium=handbook).
 
 ---
 
@@ -107,6 +107,6 @@ Negative prompts act as guardrails. Use them strategically rather than randomly 
 
 ## 🚀 Take It to the Canvas
 
-Practice combining these elements directly on [Vistella (星境)](https://www.vistella.xyz/playground?utm_source=github&utm_medium=handbook_bottom).
+Practice combining these elements directly on [Vistella (星境)](https://www.vistella.xyz/en/playground?utm_source=github&utm_medium=handbook_bottom).
 
 > **Pro Tip:** Start with **Subject + Lighting**, test the result, then layer in **Lens/Optics + Color Grading** to fine-tune the final mood.
