@@ -10,7 +10,9 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
 [![X (Twitter)](https://img.shields.io/badge/X-@aixtool-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/aixtool)
 
-[**🌐 Launch Web Playground**](https://www.vistella.xyz/playground?utm_source=github&utm_medium=repo_cta) • [**📚 Engineering Handbook**](guides/prompt_engineering_handbook.md) • [**🎨 Prompt Collections**](#-curated-prompt-collections) • [**🛠️ Interactive Tools**](#️-interactive-prompt-studio) • [**中文说明**](#-中文介绍)
+🌐 **Languages / 語言:** **English** • [简体中文](README.zh-CN.md) • [繁體中文](README.zh-TW.md)
+
+[**🌐 Launch Web Playground**](https://www.vistella.xyz/playground?utm_source=github&utm_medium=repo_cta) • [**📚 Engineering Handbook**](guides/prompt_engineering_handbook.md) • [**🎨 Prompt Collections**](#-curated-prompt-collections) • [**🛠️ Interactive Tools**](#️-interactive-prompt-studio) • [**中文说明**](README.zh-CN.md)
 
 </div>
 

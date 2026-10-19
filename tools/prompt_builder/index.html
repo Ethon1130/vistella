@@ -18,7 +18,7 @@
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Microsoft YaHei", "Noto Sans TC", sans-serif;
       background-color: var(--bg);
       color: var(--text);
       line-height: 1.6;
@@ -27,6 +27,35 @@
     .container {
       max-width: 860px;
       margin: 0 auto;
+    }
+    .top-bar {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 1rem;
+    }
+    .lang-switcher {
+      display: inline-flex;
+      background: #151e27;
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      padding: 3px;
+      gap: 3px;
+    }
+    .lang-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      padding: 4px 12px;
+      border-radius: 16px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .lang-btn.active {
+      background: var(--accent);
+      color: #042f1a;
+      font-weight: 600;
     }
     header {
       text-align: center;
@@ -51,7 +80,7 @@
       margin-bottom: 1.5rem;
     }
     .section-title {
-      font-size: 1.1rem;
+      font-size: 1.05rem;
       font-weight: 600;
       margin-bottom: 0.8rem;
       color: #93c5fd;
@@ -77,12 +106,12 @@
       display: flex;
       flex-wrap: wrap;
       gap: 0.5rem;
-      margin-top: 0.5rem;
+      margin-top: 0.6rem;
     }
     .chip {
       background: #18222d;
       border: 1px solid var(--card-border);
-      padding: 0.4rem 0.8rem;
+      padding: 0.4rem 0.85rem;
       border-radius: 20px;
       font-size: 0.85rem;
       cursor: pointer;
@@ -105,7 +134,7 @@
       border: 1px solid #1e293b;
       border-radius: 8px;
       padding: 1rem;
-      font-family: monospace;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
       font-size: 0.95rem;
       min-height: 90px;
       word-break: break-word;
@@ -167,79 +196,59 @@
 <body>
 
 <div class="container">
+  <div class="top-bar">
+    <div class="lang-switcher">
+      <button class="lang-btn active" onclick="setLang('en')">English</button>
+      <button class="lang-btn" onclick="setLang('zh-CN')">简体中文</button>
+      <button class="lang-btn" onclick="setLang('zh-TW')">繁體中文</button>
+    </div>
+  </div>
+
   <header>
-    <h1>🌌 Vistella Visual Prompt Studio</h1>
-    <p>Compose aesthetic, high-fidelity visual prompts and launch directly in Vistella Web Playground</p>
+    <h1 id="i18n-title">🌌 Vistella Visual Prompt Studio</h1>
+    <p id="i18n-subtitle">Compose aesthetic, high-fidelity visual prompts and launch directly in Vistella Web Playground</p>
   </header>
 
+  <!-- 1. Subject -->
   <div class="card">
-    <div class="section-title">1. Core Subject & Idea</div>
-    <input type="text" id="subjectInput" value="A solitary architect standing by a loft window" placeholder="e.g. A luxury watch, cyberpunk street, modern concrete villa...">
-    <div class="chips" id="subjectChips">
-      <div class="chip" onclick="setSubject('A female fashion model in an oversized charcoal coat')">Fashion Portrait</div>
-      <div class="chip" onclick="setSubject('A luxury frosted glass perfume bottle on travertine stone')">Perfume Still Life</div>
-      <div class="chip" onclick="setSubject('Japanese modern zen villa pavilion in a bamboo grove')">Zen Architecture</div>
-      <div class="chip" onclick="setSubject('Cyberpunk street hacker standing under a rain-covered neon awning')">Cyberpunk Wanderer</div>
-      <div class="chip" onclick="setSubject('Rustic stone watermill beside a sparkling summer stream')">Ghibli Countryside</div>
-    </div>
+    <div class="section-title" id="i18n-sec1">1. Core Subject & Idea</div>
+    <input type="text" id="subjectInput" value="A solitary architect standing by a loft window">
+    <div class="chips" id="subjectChips"></div>
   </div>
 
+  <!-- 2. Lighting -->
   <div class="card">
-    <div class="section-title">2. Lighting & Atmosphere</div>
-    <div class="chips" id="lightingChips">
-      <div class="chip active" data-val="soft natural morning sidelight, volumetric dust motes">Morning Sidelight</div>
-      <div class="chip" data-val="warm low-angle golden hour sunlight with elongated soft shadows">Golden Hour</div>
-      <div class="chip" data-val="vibrant cyan and magenta neon ambient backlighting with wet glossy reflections">Neon Reflections</div>
-      <div class="chip" data-val="diffused soft overcast daylight, shadowless, true natural color fidelity">Overcast Studio</div>
-      <div class="chip" data-val="chiaroscuro dramatic high-contrast lighting, deep velvety shadows">Chiaroscuro Noir</div>
-      <div class="chip" data-val="dramatic volumetric god rays streaming through forest canopy mist">Volumetric Mist</div>
-    </div>
+    <div class="section-title" id="i18n-sec2">2. Lighting & Atmosphere</div>
+    <div class="chips" id="lightingChips"></div>
   </div>
 
+  <!-- 3. Optics -->
   <div class="card">
-    <div class="section-title">3. Optics & Camera Lens</div>
-    <div class="chips" id="opticsChips">
-      <div class="chip active" data-val="shot on 85mm f/1.4 prime lens, creamy shallow depth of field, sharp eyes">85mm Portrait (f/1.4)</div>
-      <div class="chip" data-val="shot on 50mm prime lens, natural human perspective, authentic organic field of view">50mm Natural Prime</div>
-      <div class="chip" data-val="shot on 35mm street photography lens, environmental storytelling depth">35mm Street Lens</div>
-      <div class="chip" data-val="shot on 24mm tilt-shift architectural lens, straight vertical lines">24mm Tilt-Shift</div>
-      <div class="chip" data-val="extreme macro close-up photography, visible microscopic texture, razor-thin focal plane">100mm Macro</div>
-      <div class="chip" data-val="Hasselblad H6D-100c medium format clarity, studio color science">Medium Format Studio</div>
-    </div>
+    <div class="section-title" id="i18n-sec3">3. Optics & Camera Lens</div>
+    <div class="chips" id="opticsChips"></div>
   </div>
 
+  <!-- 4. Color -->
   <div class="card">
-    <div class="section-title">4. Color Grading & Film Stock</div>
-    <div class="chips" id="colorChips">
-      <div class="chip active" data-val="warm Kodak Portra 400 color science, natural flattering skin tones">Kodak Portra 400</div>
-      <div class="chip" data-val="Cinestill 800T tungsten film look, subtle red halation around bright highlights">Cinestill 800T</div>
-      <div class="chip" data-val="Fujifilm Pro 400H delicate cool cyan shadows and airy greens">Fujifilm Pro 400H</div>
-      <div class="chip" data-val="monochromatic earthy palette of beige, raw linen, and travertine">Muted Earth Tones</div>
-      <div class="chip" data-val="high-contrast silver gelatin black and white, deep tonal graduation">Classic Noir B&W</div>
-      <div class="chip" data-val="vibrant anime aesthetic, Makoto Shinkai saturated summer sky">Shinkai Anime Colors</div>
-    </div>
+    <div class="section-title" id="i18n-sec4">4. Color Grading & Film Stock</div>
+    <div class="chips" id="colorChips"></div>
   </div>
 
+  <!-- 5. Aspect Ratio -->
   <div class="card">
-    <div class="section-title">5. Aspect Ratio</div>
-    <div class="chips" id="ratioChips">
-      <div class="chip" data-val="1:1">1:1 (Square)</div>
-      <div class="chip active" data-val="3:4">3:4 (Portrait)</div>
-      <div class="chip" data-val="4:5">4:5 (Social Feed)</div>
-      <div class="chip" data-val="16:9">16:9 (Cinematic)</div>
-      <div class="chip" data-val="9:16">9:16 (Story/Mobile)</div>
-      <div class="chip" data-val="21:9">21:9 (Ultrawide)</div>
-    </div>
+    <div class="section-title" id="i18n-sec5">5. Aspect Ratio</div>
+    <div class="chips" id="ratioChips"></div>
   </div>
 
+  <!-- 6. Preview & Actions -->
   <div class="card">
     <div class="section-title">
-      <span>✨ Compiled Prompt</span>
+      <span id="i18n-preview-title">✨ Compiled Prompt</span>
       <span class="badge-toast" id="copyToast">Copied to clipboard!</span>
     </div>
     <div class="preview-box" id="promptPreview"></div>
     <div class="actions">
-      <button class="btn btn-secondary" onclick="copyPrompt()">📋 Copy Prompt</button>
+      <button class="btn btn-secondary" id="copyBtn" onclick="copyPrompt()">📋 Copy Prompt</button>
       <a class="btn btn-primary" id="launchBtn" target="_blank" href="https://www.vistella.xyz/playground">
         🚀 Launch in Vistella Playground
       </a>
@@ -247,38 +256,240 @@
   </div>
 
   <footer>
-    Crafted for <a href="https://www.vistella.xyz" target="_blank">Vistella (星境)</a> • Open-Source Community Resource
+    <span id="i18n-footer">Crafted for <a href="https://www.vistella.xyz" target="_blank">Vistella (星境)</a> • Open-Source Community Resource</span>
   </footer>
 </div>
 
 <script>
-  function getSelectedChipVal(containerId) {
-    const el = document.querySelector(`#${containerId} .chip.active`);
-    return el ? el.getAttribute('data-val') : '';
-  }
+  let currentLang = 'en';
 
-  function setSubject(text) {
-    document.getElementById('subjectInput').value = text;
+  const I18N = {
+    'en': {
+      title: "🌌 Vistella Visual Prompt Studio",
+      subtitle: "Compose aesthetic, high-fidelity visual prompts and launch directly in Vistella Web Playground",
+      sec1: "1. Core Subject & Idea",
+      sec2: "2. Lighting & Atmosphere",
+      sec3: "3. Optics & Camera Lens",
+      sec4: "4. Color Grading & Film Stock",
+      sec5: "5. Aspect Ratio",
+      previewTitle: "✨ Compiled Prompt",
+      copyToast: "Copied to clipboard!",
+      copyBtn: "📋 Copy Prompt",
+      launchBtn: "🚀 Launch in Vistella Playground",
+      footer: 'Crafted for <a href="https://www.vistella.xyz" target="_blank">Vistella (星境)</a> • Open-Source Community Resource',
+      subjectPlaceholder: "e.g. A luxury watch, cyberpunk street, modern concrete villa...",
+      urlPrefix: "https://www.vistella.xyz/playground",
+      subjects: [
+        { label: "Fashion Portrait", val: "A female fashion model in an architectural oversized charcoal coat" },
+        { label: "Perfume Still Life", val: "A luxury frosted glass perfume bottle on damp travertine stone" },
+        { label: "Zen Architecture", val: "Japanese modern zen villa pavilion nestled in a tranquil bamboo grove" },
+        { label: "Cyberpunk Wanderer", val: "Cyberpunk street hacker standing under a rain-covered neon awning in Shinjuku" },
+        { label: "Ghibli Countryside", val: "Rustic stone watermill beside a sparkling summer stream with wildflowers" }
+      ],
+      lighting: [
+        { label: "Morning Sidelight", val: "soft natural morning sidelight, volumetric dust motes" },
+        { label: "Golden Hour", val: "warm low-angle golden hour sunlight with elongated soft shadows" },
+        { label: "Neon Reflections", val: "vibrant cyan and magenta neon ambient backlighting with wet glossy reflections" },
+        { label: "Overcast Studio", val: "diffused soft overcast daylight, shadowless, true natural color fidelity" },
+        { label: "Chiaroscuro Noir", val: "chiaroscuro dramatic high-contrast lighting, deep velvety shadows" },
+        { label: "Volumetric Mist", val: "dramatic volumetric god rays streaming through forest canopy mist" }
+      ],
+      optics: [
+        { label: "85mm Portrait (f/1.4)", val: "shot on 85mm f/1.4 prime lens, creamy shallow depth of field, sharp eyes" },
+        { label: "50mm Natural Prime", val: "shot on 50mm prime lens, natural human perspective, authentic organic field of view" },
+        { label: "35mm Street Lens", val: "shot on 35mm street photography lens, environmental storytelling depth" },
+        { label: "24mm Tilt-Shift", val: "shot on 24mm tilt-shift architectural lens, straight vertical lines" },
+        { label: "100mm Macro", val: "extreme macro close-up photography, visible microscopic texture, razor-thin focal plane" },
+        { label: "Medium Format", val: "Hasselblad H6D-100c medium format clarity, studio color science" }
+      ],
+      color: [
+        { label: "Kodak Portra 400", val: "warm Kodak Portra 400 color science, natural flattering skin tones" },
+        { label: "Cinestill 800T", val: "Cinestill 800T tungsten film look, subtle red halation around bright highlights" },
+        { label: "Fujifilm Pro 400H", val: "Fujifilm Pro 400H delicate cool cyan shadows and airy greens" },
+        { label: "Muted Earth Tones", val: "monochromatic earthy palette of beige, raw linen, and travertine" },
+        { label: "Classic Noir B&W", val: "high-contrast silver gelatin black and white, deep tonal graduation" },
+        { label: "Shinkai Anime Sky", val: "vibrant anime aesthetic, Makoto Shinkai saturated summer sky" }
+      ],
+      ratios: ["1:1", "3:4", "4:5", "16:9", "9:16", "21:9"]
+    },
+    'zh-CN': {
+      title: "🌌 Vistella 提示词可视化工作室",
+      subtitle: "可视化拼装高质感视觉提示词，一键直达 Vistella 创作台开启生成",
+      sec1: "1. 核心主体与创意想法",
+      sec2: "2. 光影布光与空间氛围",
+      sec3: "3. 镜头光学与构图视角",
+      sec4: "4. 色彩调色与胶片风格",
+      sec5: "5. 画幅构图比例",
+      previewTitle: "✨ 拼装完成的提示词",
+      copyToast: "已复制到剪贴板！",
+      copyBtn: "📋 复制提示词",
+      launchBtn: "🚀 在 Vistella 中打开生成",
+      footer: '专为 <a href="https://www.vistella.xyz/zh" target="_blank">Vistella (星境)</a> 打造 • 社区开源创作工具',
+      subjectPlaceholder: "例如：轻奢机械腕表、雨夜赛博街道、现代混凝土别墅...",
+      urlPrefix: "https://www.vistella.xyz/zh/playground",
+      subjects: [
+        { label: "时尚人像写真", val: "A female fashion model in an architectural oversized charcoal coat" },
+        { label: "轻奢香水静物", val: "A luxury frosted glass perfume bottle on damp travertine stone" },
+        { label: "日式枯山水庭院", val: "Japanese modern zen villa pavilion nestled in a tranquil bamboo grove" },
+        { label: "雨夜赛博朋克行者", val: "Cyberpunk street hacker standing under a rain-covered neon awning in Shinjuku" },
+        { label: "吉卜力溪边水车田园", val: "Rustic stone watermill beside a sparkling summer stream with wildflowers" }
+      ],
+      lighting: [
+        { label: "早晨柔和侧光", val: "soft natural morning sidelight, volumetric dust motes" },
+        { label: "黄金时段暖光", val: "warm low-angle golden hour sunlight with elongated soft shadows" },
+        { label: "霓虹雨夜反光", val: "vibrant cyan and magenta neon ambient backlighting with wet glossy reflections" },
+        { label: "柔光摄影棚光", val: "diffused soft overcast daylight, shadowless, true natural color fidelity" },
+        { label: "伦勃朗高反差明暗", val: "chiaroscuro dramatic high-contrast lighting, deep velvety shadows" },
+        { label: "穿林丁达尔光束", val: "dramatic volumetric god rays streaming through forest canopy mist" }
+      ],
+      optics: [
+        { label: "85mm 肖像定焦 (f/1.4)", val: "shot on 85mm f/1.4 prime lens, creamy shallow depth of field, sharp eyes" },
+        { label: "50mm 自然人眼视角", val: "shot on 50mm prime lens, natural human perspective, authentic organic field of view" },
+        { label: "35mm 人文环境街拍", val: "shot on 35mm street photography lens, environmental storytelling depth" },
+        { label: "24mm 建筑移轴平直", val: "shot on 24mm tilt-shift architectural lens, straight vertical lines" },
+        { label: "100mm 极致微距细节", val: "extreme macro close-up photography, visible microscopic texture, razor-thin focal plane" },
+        { label: "哈苏中画幅高画质", val: "Hasselblad H6D-100c medium format clarity, studio color science" }
+      ],
+      color: [
+        { label: "柯达 Portra 400 暖调", val: "warm Kodak Portra 400 color science, natural flattering skin tones" },
+        { label: "Cinestill 800T 卤化光晕", val: "Cinestill 800T tungsten film look, subtle red halation around bright highlights" },
+        { label: "富士 Pro 400H 清透冷调", val: "Fujifilm Pro 400H delicate cool cyan shadows and airy greens" },
+        { label: "极简米灰大地原色", val: "monochromatic earthy palette of beige, raw linen, and travertine" },
+        { label: "经典银盐黑白胶片", val: "high-contrast silver gelatin black and white, deep tonal graduation" },
+        { label: "新海诚动漫夏日天空", val: "vibrant anime aesthetic, Makoto Shinkai saturated summer sky" }
+      ],
+      ratios: ["1:1", "3:4", "4:5", "16:9", "9:16", "21:9"]
+    },
+    'zh-TW': {
+      title: "🌌 Vistella 提示詞視覺化工作室",
+      subtitle: "視覺化拼裝高質感視覺提示詞，一鍵直達 Vistella 創作台開啟生成",
+      sec1: "1. 核心主體與創意發想",
+      sec2: "2. 光影佈光與空間氛圍",
+      sec3: "3. 鏡頭光學與構圖視角",
+      sec4: "4. 色彩調色與底片風格",
+      sec5: "5. 畫幅構圖比例",
+      previewTitle: "✨ 拼裝完成的提示詞",
+      copyToast: "已複製至剪貼簿！",
+      copyBtn: "📋 複製提示詞",
+      launchBtn: "🚀 在 Vistella 中打開生成",
+      footer: '專為 <a href="https://www.vistella.xyz/zh" target="_blank">Vistella (星境)</a> 打造 • 社群開源創作工具',
+      subjectPlaceholder: "例如：輕奢機械腕錶、雨夜賽博街道、現代清水模別墅...",
+      urlPrefix: "https://www.vistella.xyz/zh/playground",
+      subjects: [
+        { label: "時尚人像寫真", val: "A female fashion model in an architectural oversized charcoal coat" },
+        { label: "輕奢香水靜物", val: "A luxury frosted glass perfume bottle on damp travertine stone" },
+        { label: "日式枯山水庭院", val: "Japanese modern zen villa pavilion nestled in a tranquil bamboo grove" },
+        { label: "雨夜賽博龐克行者", val: "Cyberpunk street hacker standing under a rain-covered neon awning in Shinjuku" },
+        { label: "吉卜力溪邊水車田園", val: "Rustic stone watermill beside a sparkling summer stream with wildflowers" }
+      ],
+      lighting: [
+        { label: "早晨柔和側光", val: "soft natural morning sidelight, volumetric dust motes" },
+        { label: "黃金時段暖光", val: "warm low-angle golden hour sunlight with elongated soft shadows" },
+        { label: "霓虹雨夜反光", val: "vibrant cyan and magenta neon ambient backlighting with wet glossy reflections" },
+        { label: "柔光攝影棚光", val: "diffused soft overcast daylight, shadowless, true natural color fidelity" },
+        { label: "林布蘭高反差明暗", val: "chiaroscuro dramatic high-contrast lighting, deep velvety shadows" },
+        { label: "穿林廷得耳光束", val: "dramatic volumetric god rays streaming through forest canopy mist" }
+      ],
+      optics: [
+        { label: "85mm 肖像定焦 (f/1.4)", val: "shot on 85mm f/1.4 prime lens, creamy shallow depth of field, sharp eyes" },
+        { label: "50mm 自然人眼視角", val: "shot on 50mm prime lens, natural human perspective, authentic organic field of view" },
+        { label: "35mm 人文環境街拍", val: "shot on 35mm street photography lens, environmental storytelling depth" },
+        { label: "24mm 建築移軸垂直", val: "shot on 24mm tilt-shift architectural lens, straight vertical lines" },
+        { label: "100mm 極致微距細節", val: "extreme macro close-up photography, visible microscopic texture, razor-thin focal plane" },
+        { label: "哈蘇中畫幅高畫質", val: "Hasselblad H6D-100c medium format clarity, studio color science" }
+      ],
+      color: [
+        { label: "柯達 Portra 400 暖調", val: "warm Kodak Portra 400 color science, natural flattering skin tones" },
+        { label: "Cinestill 800T 鹵化光暈", val: "Cinestill 800T tungsten film look, subtle red halation around bright highlights" },
+        { label: "富士 Pro 400H 清透冷調", val: "Fujifilm Pro 400H delicate cool cyan shadows and airy greens" },
+        { label: "極簡米灰大地原色", val: "monochromatic earthy palette of beige, raw linen, and travertine" },
+        { label: "經典銀鹽黑白底片", val: "high-contrast silver gelatin black and white, deep tonal graduation" },
+        { label: "新海誠動漫夏日天空", val: "vibrant anime aesthetic, Makoto Shinkai saturated summer sky" }
+      ],
+      ratios: ["1:1", "3:4", "4:5", "16:9", "9:16", "21:9"]
+    }
+  };
+
+  function setLang(lang) {
+    currentLang = lang;
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      btn.classList.toggle('active', btn.textContent.includes(lang === 'en' ? 'English' : (lang === 'zh-CN' ? '简体' : '繁體')));
+    });
+
+    const data = I18N[lang];
+    document.getElementById('i18n-title').textContent = data.title;
+    document.getElementById('i18n-subtitle').textContent = data.subtitle;
+    document.getElementById('i18n-sec1').textContent = data.sec1;
+    document.getElementById('i18n-sec2').textContent = data.sec2;
+    document.getElementById('i18n-sec3').textContent = data.sec3;
+    document.getElementById('i18n-sec4').textContent = data.sec4;
+    document.getElementById('i18n-sec5').textContent = data.sec5;
+    document.getElementById('i18n-preview-title').textContent = data.previewTitle;
+    document.getElementById('copyToast').textContent = data.copyToast;
+    document.getElementById('copyBtn').textContent = data.copyBtn;
+    document.getElementById('launchBtn').textContent = data.launchBtn;
+    document.getElementById('i18n-footer').innerHTML = data.footer;
+    document.getElementById('subjectInput').placeholder = data.subjectPlaceholder;
+
+    renderChips('subjectChips', data.subjects, (item) => {
+      document.getElementById('subjectInput').value = item.val;
+      updatePrompt();
+    }, false);
+
+    renderChips('lightingChips', data.lighting, () => updatePrompt(), true);
+    renderChips('opticsChips', data.optics, () => updatePrompt(), true);
+    renderChips('colorChips', data.color, () => updatePrompt(), true);
+    renderRatioChips('ratioChips', data.ratios);
+
     updatePrompt();
   }
 
-  function setupChipListeners(containerId) {
-    const chips = document.querySelectorAll(`#${containerId} .chip`);
-    chips.forEach(chip => {
-      chip.addEventListener('click', () => {
-        chips.forEach(c => c.classList.remove('active'));
-        chip.classList.add('active');
-        updatePrompt();
-      });
+  function renderChips(containerId, list, onClick, isSelectable) {
+    const el = document.getElementById(containerId);
+    el.innerHTML = '';
+    list.forEach((item, index) => {
+      const chip = document.createElement('div');
+      chip.className = 'chip' + (isSelectable && index === 0 ? ' active' : '');
+      chip.textContent = item.label;
+      chip.setAttribute('data-val', item.val);
+      chip.onclick = () => {
+        if (isSelectable) {
+          el.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+          chip.classList.add('active');
+        }
+        onClick(item);
+      };
+      el.appendChild(chip);
     });
   }
 
+  function renderRatioChips(containerId, list) {
+    const el = document.getElementById(containerId);
+    el.innerHTML = '';
+    list.forEach((ratio, index) => {
+      const chip = document.createElement('div');
+      chip.className = 'chip' + (ratio === '3:4' ? ' active' : '');
+      chip.textContent = ratio;
+      chip.setAttribute('data-val', ratio);
+      chip.onclick = () => {
+        el.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+        chip.classList.add('active');
+        updatePrompt();
+      };
+      el.appendChild(chip);
+    });
+  }
+
+  function getSelectedVal(containerId) {
+    const chip = document.querySelector(`#${containerId} .chip.active`);
+    return chip ? chip.getAttribute('data-val') : '';
+  }
+
   function updatePrompt() {
-    const subject = document.getElementById('subjectInput').value.trim() || 'A beautiful visual creation';
-    const lighting = getSelectedChipVal('lightingChips');
-    const optics = getSelectedChipVal('opticsChips');
-    const color = getSelectedChipVal('colorChips');
-    const ratio = getSelectedChipVal('ratioChips') || '3:4';
+    const subject = document.getElementById('subjectInput').value.trim() || 'A modern visual creation';
+    const lighting = getSelectedVal('lightingChips');
+    const optics = getSelectedVal('opticsChips');
+    const color = getSelectedVal('colorChips');
 
     const parts = [subject];
     if (lighting) parts.push(lighting);
@@ -290,8 +501,8 @@
     document.getElementById('promptPreview').textContent = promptText;
 
     const encoded = encodeURIComponent(promptText);
-    const launchUrl = `https://www.vistella.xyz/playground?utm_source=prompt_studio&prompt=${encoded}`;
-    document.getElementById('launchBtn').href = launchUrl;
+    const prefix = I18N[currentLang].urlPrefix;
+    document.getElementById('launchBtn').href = `${prefix}?utm_source=prompt_studio_${currentLang}&prompt=${encoded}`;
   }
 
   function copyPrompt() {
@@ -304,12 +515,9 @@
   }
 
   document.getElementById('subjectInput').addEventListener('input', updatePrompt);
-  setupChipListeners('lightingChips');
-  setupChipListeners('opticsChips');
-  setupChipListeners('colorChips');
-  setupChipListeners('ratioChips');
 
-  updatePrompt();
+  // Initialize
+  setLang('en');
 </script>
 
 </body>
