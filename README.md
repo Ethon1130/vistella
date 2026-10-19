@@ -2,14 +2,15 @@
 
 # 🌌 Vistella (星境)
 
-**Curated Prompt Recipes, Visual Engineering & Creative Showcase for AI Image Generation.**
+**The Open-Source Prompt Engineering Hub, Aesthetic Recipes & Creative Studio for AI Visual Art.**
 
-[![Website](https://img.shields.io/badge/Web_App-vistella.xyz-7c3aed?style=for-the-badge&logo=googlechrome&logoColor=white)](https://www.vistella.xyz?utm_source=github&utm_medium=repo_banner&utm_campaign=vistella_oss)
+[![Website](https://img.shields.io/badge/Web_App-vistella.xyz-7c3aed?style=for-the-badge&logo=googlechrome&logoColor=white)](https://www.vistella.xyz/playground?utm_source=github&utm_medium=repo_banner&utm_campaign=vistella_oss)
+[![Prompt Handbook](https://img.shields.io/badge/Handbook-Prompt_Engineering-3b82f6?style=for-the-badge&logo=gitbook&logoColor=white)](guides/prompt_engineering_handbook.md)
+[![Interactive Tool](https://img.shields.io/badge/Tools-Prompt_Studio-10b981?style=for-the-badge&logo=html5&logoColor=white)](tools/prompt_builder/index.html)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
 [![X (Twitter)](https://img.shields.io/badge/X-@aixtool-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/aixtool)
-[![Playground](https://img.shields.io/badge/Online_Creation-Free_Credits_Daily-success?style=for-the-badge)](https://www.vistella.xyz/playground?utm_source=github&utm_medium=repo_badge)
 
-[**🌐 Launch Web Playground**](https://www.vistella.xyz/playground?utm_source=github&utm_medium=repo_cta) • [**📖 Prompt Recipes**](#-curated-prompt-recipes) • [**🎨 Creative Capabilities**](#-creative-capabilities--visual-styles) • [**💡 Prompt Formulas**](#-the-universal-prompt-formula) • [**中文说明**](#-中文介绍)
+[**🌐 Launch Web Playground**](https://www.vistella.xyz/playground?utm_source=github&utm_medium=repo_cta) • [**📚 Engineering Handbook**](guides/prompt_engineering_handbook.md) • [**🎨 Prompt Collections**](#-curated-prompt-collections) • [**🛠️ Interactive Tools**](#️-interactive-prompt-studio) • [**中文说明**](#-中文介绍)
 
 </div>
 
@@ -17,13 +18,36 @@
 
 ## 💡 What is Vistella?
 
-[Vistella (星境)](https://www.vistella.xyz?utm_source=github&utm_medium=repo_intro) is a modern, intuitive AI visual creation platform designed for creators, designers, and visual artists. Instead of wrestling with complex local software installations, GPU requirements, or terminal commands, Vistella empowers you to generate and edit high-quality visual art directly in your web browser.
+[Vistella (星境)](https://www.vistella.xyz?utm_source=github&utm_medium=repo_intro) is a modern, intuitive AI visual creation platform designed for creators, designers, and visual artists. Instead of wrestling with complex local software installations, GPU requirements, or terminal environments, Vistella empowers you to generate and edit high-quality visual art directly in your web browser with zero setup.
 
-This open-source repository serves as the official community resource for:
-- 🎨 **Curated Prompt Recipes**: Production-grade prompt formulas engineered for exceptional realism, lighting, and composition.
-- 📐 **Visual Design Guidelines**: Proven principles for structuring descriptive text prompts to achieve predictable, stunning results.
-- 🛡️ **Negative Prompt Essentials**: Curated exclusion lists to eliminate common artifacts, anatomical distortions, and unwanted noise.
-- ✨ **Community Showcase**: Inspiring visual prompts tested and validated directly in the [Vistella Web Playground](https://www.vistella.xyz/playground?utm_source=github&utm_medium=repo_body).
+This open-source repository serves as the official community resource center:
+- 📚 **Comprehensive Handbook**: Deep dive into lighting masterclasses, camera lenses, color science, and composition rules.
+- 🎨 **Domain-Specific Prompt Libraries**: Production-grade prompt formulas for portraits, commercial products, architecture, and digital art.
+- 🛡️ **Negative Prompt Dictionary**: Curated guardrails to eliminate plastic skin, anatomical errors, and geometric distortions.
+- 🛠️ **Local Prompt Studio Tools**: Zero-dependency Python CLI tool and standalone offline HTML prompt builder with direct one-click launch to Vistella.
+
+---
+
+## 🗂️ Repository Directory & Quick Navigation
+
+```text
+vistella/
+├── guides/                             # 📚 In-depth Visual Guides
+│   ├── prompt_engineering_handbook.md   # Lighting, optics, color science, and framing
+│   └── aspect_ratio_guide.md           # Optimal ratios (1:1, 3:4, 16:9, 21:9) & layout
+├── prompts/                            # 🎨 Battle-Tested Prompt Collections
+│   ├── portraits_and_people.md         # Fashion editorials, cyberpunk wanderers, cinema noir
+│   ├── commercial_and_products.md      # Perfumes, smartwatches, sneakers, cosmetics
+│   ├── architecture_and_spaces.md      # Brutalist concrete, zen pavilions, desert retreats
+│   ├── digital_art_and_illustration.md # Shinkai skies, Ghibli meadows, 80s synthwave
+│   ├── recipes.md                      # Curated cross-category highlights
+│   └── negative_prompts.md             # Curated artifact elimination tokens
+├── tools/                              # 🛠️ Interactive Tools
+│   └── prompt_builder/
+│       ├── index.html                  # Standalone Web Prompt Studio (Open in browser)
+│       └── prompt_builder.py           # Zero-dependency interactive Python CLI generator
+└── CONTRIBUTING.md                     # 🤝 How to submit prompt recipes and improvements
+```
 
 ---
 
@@ -42,17 +66,38 @@ No local setup, no heavy installations, and no powerful GPU required:
 
 ---
 
-## 🎨 Creative Capabilities & Visual Styles
+## 🎨 Curated Prompt Collections
 
-Vistella is tuned for diverse visual scenarios with rich aesthetic depth:
+Explore our categorized recipes with lighting, ratio, and aesthetic breakdowns:
 
-| Style & Domain | Best For | Visual Characteristics | Output Ratios |
-| :--- | :--- | :--- | :--- |
-| **Photorealistic Studio** | Editorial portraits, fashion, candid street photography | Authentic skin texture, natural aperture bokeh, realistic optics | `3:4`, `4:5`, `16:9` |
-| **Commercial & Product** | E-commerce visuals, packaging, industrial design | Clean studio lighting, physical material reflections, negative space | `1:1`, `4:3` |
-| **Architecture & Spaces** | Exterior pavilions, interior design, spatial concepts | Volumetric sunlight, material authenticity, precise perspective | `16:9`, `21:9` |
-| **Digital Art & Anime** | Concept art, fantasy worldbuilding, character illustration | Vibrant color harmony, cinematic atmosphere, artistic flair | `16:9`, `21:9` |
-| **Brand & Graphic Assets** | Logos, app icons, vector illustrations, typography | Sharp edges, minimalist compositions, solid background contrast | `1:1`, `16:9` |
+| Category | Description | Recommended Link |
+| :--- | :--- | :--- |
+| **👤 Portraits & People** | Editorial fashion, vintage 1970s warmth, cyberpunk wanderers, studio beauty close-ups | [Browse Portraits →](prompts/portraits_and_people.md) |
+| **🛍️ Commercial & Products** | Luxury frosted perfumes, exploded 3D smartwatches, skincare serums, sneakers | [Browse Products →](prompts/commercial_and_products.md) |
+| **🏛️ Architecture & Spaces** | Brutalist concrete residences, Japanese zen pavilions, Scandinavian kitchens | [Browse Architecture →](prompts/architecture_and_spaces.md) |
+| **🎨 Digital Art & Anime** | Makoto Shinkai skies, Studio Ghibli countryside, retro 80s synthwave, 3D dioramas | [Browse Digital Art →](prompts/digital_art_and_illustration.md) |
+| **🛡️ Negative Prompts** | Specialized exclusions for hands, skin texture, product clarity, and architectural lines | [View Negative Prompts →](prompts/negative_prompts.md) |
+
+---
+
+## 🛠️ Interactive Prompt Studio
+
+We provide two lightweight tools to help you craft structured prompts in seconds:
+
+### 1. Web Prompt Studio (`tools/prompt_builder/index.html`)
+A standalone single-file visual tool that runs completely offline in any web browser.
+- Interactive chips for Lighting, Optics, Film Stocks, and Aspect Ratios.
+- Live real-time prompt compilation.
+- One-click button: **"🚀 Launch in Vistella Playground"**.
+
+### 2. CLI Prompt Builder (`tools/prompt_builder/prompt_builder.py`)
+Run directly from your terminal with zero external dependencies:
+
+```bash
+python tools/prompt_builder/prompt_builder.py
+```
+
+Follow the interactive prompts to generate production-ready descriptions and get a direct web link to test them.
 
 ---
 
@@ -66,53 +111,10 @@ $$\text{Final Artwork} = \text{Subject} + \text{Environment} + \text{Lighting \&
 1. **Core Subject**: Define the main character, object, or architecture with specific descriptors (age, clothing, pose, materials).
 2. **Environment & Context**: Describe the surrounding space, background elements, weather, or time of day.
 3. **Lighting & Mood**: Specify light direction and quality (e.g., *"soft diffused morning sidelight"*, *"volumetric golden hour glow"*).
-4. **Camera & Optics**: Guide depth and perspective (e.g., *"shot on 50mm f/1.4 lens, shallow depth of field"*).
+4. **Camera & Optics**: Guide depth and perspective (e.g., *"shot on 85mm f/1.4 lens, shallow depth of field"*).
 5. **Color & Texture**: State the color grade and surface finishes (e.g., *"warm earth tones, tactile brushed aluminum texture"*).
 
----
-
-## 📖 Curated Prompt Recipes
-
-Test these production-ready prompts directly in the [Vistella Playground](https://www.vistella.xyz/playground?utm_source=github&utm_medium=recipe_section):
-
-### 1. Cinematic Hyper-Realistic Portrait
-> **Style:** Photorealistic Studio Photography  
-> **Recommended Ratio:** `3:4` or `4:5`
-
-```text
-Cinematic 35mm photograph of an East Asian female architect in an ultra-modern concrete studio, 
-soft natural morning sidelight, depth of field, dust motes in sunbeam, shot on Hasselblad H6D-100c, 
-subtle film grain, hyper-detailed skin texture, neutral color grading, editorial masterpiece.
-```
-👉 [Open in Vistella Playground →](https://www.vistella.xyz/playground?utm_source=github&utm_medium=prompt_recipe1)
-
----
-
-### 2. Conceptual Minimalist 3D Product
-> **Style:** Commercial Product Visualization  
-> **Recommended Ratio:** `1:1`
-
-```text
-A luxury matte ceramic perfume bottle standing on smooth damp limestone, 
-single ray of volumetric light from above, delicate water droplets, 
-frosted glass accents, architectural minimalism, award-winning commercial photography, 8k render.
-```
-👉 [Open in Vistella Playground →](https://www.vistella.xyz/playground?utm_source=github&utm_medium=prompt_recipe2)
-
----
-
-### 3. Cyberpunk Streetscape
-> **Style:** Digital Art & Worldbuilding  
-> **Recommended Ratio:** `21:9`
-
-```text
-Rain-slicked alleyway in Neo-Tokyo at midnight, holographic kanji neon signage reflecting on wet asphalt, 
-lone figure with glowing cybernetic visor under a transparent umbrella, moody volumetric fog, 
-teal and magenta color contrast, Unreal Engine 5 aesthetic, photorealistic octane render.
-```
-👉 [Open in Vistella Playground →](https://www.vistella.xyz/playground?utm_source=github&utm_medium=prompt_recipe3)
-
-*(Find more recipes and negative prompt guides in [`prompts/recipes.md`](prompts/recipes.md) and [`prompts/negative_prompts.md`](prompts/negative_prompts.md))*
+*(Read the complete breakdown in the [Prompt Engineering Handbook](guides/prompt_engineering_handbook.md))*
 
 ---
 
@@ -120,11 +122,13 @@ teal and magenta color contrast, Unreal Engine 5 aesthetic, photorealistic octan
 
 **Vistella (星境)** 是专为创作者与设计师打造的在线 AI 视觉创作平台。无需配置本地复杂的显卡环境与运行库，打开网页即可开始创作。
 
-- 🌐 **在线即用**：直接访问 [Vistella 官方工作区 (vistella.xyz)](https://www.vistella.xyz?utm_source=github&utm_medium=zh_intro) 即可开始创作，每日提供免费额度。
+- 🌐 **在线即用**：直接访问 [Vistella 官方工作区 (vistella.xyz)](https://www.vistella.xyz/playground?utm_source=github&utm_medium=zh_intro) 即可开始创作，每日提供免费额度。
 - 📦 **开源资源**：
-  - 精选高分提示词配方（包含景深、布光、材质增强技巧）：详见 [`prompts/recipes.md`](prompts/recipes.md)。
-  - 画面优化与负向提示词词库：详见 [`prompts/negative_prompts.md`](prompts/negative_prompts.md)。
-  - 创作技巧与构图指南：结构化输入五步法，告别盲目抽卡。
+  - 📚 **提示词工程权威指南**：系统化讲解布光方案（伦勃朗光、丁达尔光、侧光）、光学镜头（35mm/50mm/85mm）、胶片色调与构图法则：详见 [`guides/prompt_engineering_handbook.md`](guides/prompt_engineering_handbook.md)。
+  - 📐 **画幅比例指南**：详见 [`guides/aspect_ratio_guide.md`](guides/aspect_ratio_guide.md)。
+  - 🎨 **四大细分场景词库**：人像写真、商业静物、建筑空间、数字动漫插画，开箱即用。
+  - 🛡️ **负向排除词典**：详见 [`prompts/negative_prompts.md`](prompts/negative_prompts.md)。
+  - 🛠️ **本地交互式提示词生成器**：单文件 Web 版（[`tools/prompt_builder/index.html`](tools/prompt_builder/index.html)）与 Python 终端交互版。
 
 ---
 
@@ -135,7 +139,7 @@ We welcome community contributions!
 - Share negative prompt refinements for specific art styles
 - Enhance documentation or report feedback
 
-Please feel free to open a [Pull Request](https://github.com/Ethon1130/vistella/pulls) or start a discussion in [Issues](https://github.com/Ethon1130/vistella/issues).
+Please see [`CONTRIBUTING.md`](CONTRIBUTING.md) for details on how to open a Pull Request.
 
 ---
 
@@ -146,5 +150,5 @@ This project is open-sourced under the [MIT License](LICENSE).
 ---
 
 <div align="center">
-  <sub>Built with ❤️ by <a href="https://github.com/Ethon1130">Ethon1130</a> & the <a href="https://www.vistella.xyz?utm_source=github&utm_medium=footer">Vistella Community</a>.</sub>
+  <sub>Built with ❤️ by <a href="https://github.com/Ethon1130">Ethon1130</a> & the <a href="https://www.vistella.xyz/playground?utm_source=github&utm_medium=footer">Vistella Community</a>.</sub>
 </div>

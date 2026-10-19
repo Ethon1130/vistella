@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vistella Visual Prompt Studio</title>
+  <style>
+    :root {
+      --bg: #090d10;
+      --card: #121920;
+      --card-border: #1e2936;
+      --text: #f0f4f8;
+      --text-muted: #8a99a8;
+      --accent: #10b981;
+      --accent-hover: #059669;
+      --primary: #3b82f6;
+      --primary-hover: #2563eb;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    header h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.5rem;
+      background: linear-gradient(135deg, #60a5fa, #34d399);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    header p {
+      color: var(--text-muted);
+      font-size: 1rem;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .section-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 0.8rem;
+      color: #93c5fd;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    input[type="text"] {
+      width: 100%;
+      background: #0d131a;
+      border: 1px solid var(--card-border);
+      color: var(--text);
+      padding: 0.8rem 1rem;
+      border-radius: 8px;
+      font-size: 1rem;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    input[type="text"]:focus {
+      border-color: var(--accent);
+    }
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.5rem;
+    }
+    .chip {
+      background: #18222d;
+      border: 1px solid var(--card-border);
+      padding: 0.4rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      cursor: pointer;
+      user-select: none;
+      transition: all 0.2s;
+      color: var(--text-muted);
+    }
+    .chip:hover {
+      border-color: #3b82f6;
+      color: var(--text);
+    }
+    .chip.active {
+      background: rgba(16, 185, 129, 0.15);
+      border-color: var(--accent);
+      color: #34d399;
+      font-weight: 500;
+    }
+    .preview-box {
+      background: #080c10;
+      border: 1px solid #1e293b;
+      border-radius: 8px;
+      padding: 1rem;
+      font-family: monospace;
+      font-size: 0.95rem;
+      min-height: 90px;
+      word-break: break-word;
+      color: #cbd5e1;
+      margin-bottom: 1rem;
+    }
+    .actions {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .btn {
+      flex: 1;
+      min-width: 200px;
+      padding: 0.85rem 1.2rem;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+      transition: all 0.2s;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+    .btn-primary {
+      background: var(--accent);
+      color: #042f1a;
+    }
+    .btn-primary:hover {
+      background: var(--accent-hover);
+    }
+    .btn-secondary {
+      background: #202b38;
+      color: var(--text);
+    }
+    .btn-secondary:hover {
+      background: #2b394a;
+    }
+    .badge-toast {
+      color: var(--accent);
+      font-size: 0.85rem;
+      margin-left: 0.5rem;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+    footer a { color: #60a5fa; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <h1>🌌 Vistella Visual Prompt Studio</h1>
+    <p>Compose aesthetic, high-fidelity visual prompts and launch directly in Vistella Web Playground</p>
+  </header>
+
+  <div class="card">
+    <div class="section-title">1. Core Subject & Idea</div>
+    <input type="text" id="subjectInput" value="A solitary architect standing by a loft window" placeholder="e.g. A luxury watch, cyberpunk street, modern concrete villa...">
+    <div class="chips" id="subjectChips">
+      <div class="chip" onclick="setSubject('A female fashion model in an oversized charcoal coat')">Fashion Portrait</div>
+      <div class="chip" onclick="setSubject('A luxury frosted glass perfume bottle on travertine stone')">Perfume Still Life</div>
+      <div class="chip" onclick="setSubject('Japanese modern zen villa pavilion in a bamboo grove')">Zen Architecture</div>
+      <div class="chip" onclick="setSubject('Cyberpunk street hacker standing under a rain-covered neon awning')">Cyberpunk Wanderer</div>
+      <div class="chip" onclick="setSubject('Rustic stone watermill beside a sparkling summer stream')">Ghibli Countryside</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="section-title">2. Lighting & Atmosphere</div>
+    <div class="chips" id="lightingChips">
+      <div class="chip active" data-val="soft natural morning sidelight, volumetric dust motes">Morning Sidelight</div>
+      <div class="chip" data-val="warm low-angle golden hour sunlight with elongated soft shadows">Golden Hour</div>
+      <div class="chip" data-val="vibrant cyan and magenta neon ambient backlighting with wet glossy reflections">Neon Reflections</div>
+      <div class="chip" data-val="diffused soft overcast daylight, shadowless, true natural color fidelity">Overcast Studio</div>
+      <div class="chip" data-val="chiaroscuro dramatic high-contrast lighting, deep velvety shadows">Chiaroscuro Noir</div>
+      <div class="chip" data-val="dramatic volumetric god rays streaming through forest canopy mist">Volumetric Mist</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="section-title">3. Optics & Camera Lens</div>
+    <div class="chips" id="opticsChips">
+      <div class="chip active" data-val="shot on 85mm f/1.4 prime lens, creamy shallow depth of field, sharp eyes">85mm Portrait (f/1.4)</div>
+      <div class="chip" data-val="shot on 50mm prime lens, natural human perspective, authentic organic field of view">50mm Natural Prime</div>
+      <div class="chip" data-val="shot on 35mm street photography lens, environmental storytelling depth">35mm Street Lens</div>
+      <div class="chip" data-val="shot on 24mm tilt-shift architectural lens, straight vertical lines">24mm Tilt-Shift</div>
+      <div class="chip" data-val="extreme macro close-up photography, visible microscopic texture, razor-thin focal plane">100mm Macro</div>
+      <div class="chip" data-val="Hasselblad H6D-100c medium format clarity, studio color science">Medium Format Studio</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="section-title">4. Color Grading & Film Stock</div>
+    <div class="chips" id="colorChips">
+      <div class="chip active" data-val="warm Kodak Portra 400 color science, natural flattering skin tones">Kodak Portra 400</div>
+      <div class="chip" data-val="Cinestill 800T tungsten film look, subtle red halation around bright highlights">Cinestill 800T</div>
+      <div class="chip" data-val="Fujifilm Pro 400H delicate cool cyan shadows and airy greens">Fujifilm Pro 400H</div>
+      <div class="chip" data-val="monochromatic earthy palette of beige, raw linen, and travertine">Muted Earth Tones</div>
+      <div class="chip" data-val="high-contrast silver gelatin black and white, deep tonal graduation">Classic Noir B&W</div>
+      <div class="chip" data-val="vibrant anime aesthetic, Makoto Shinkai saturated summer sky">Shinkai Anime Colors</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="section-title">5. Aspect Ratio</div>
+    <div class="chips" id="ratioChips">
+      <div class="chip" data-val="1:1">1:1 (Square)</div>
+      <div class="chip active" data-val="3:4">3:4 (Portrait)</div>
+      <div class="chip" data-val="4:5">4:5 (Social Feed)</div>
+      <div class="chip" data-val="16:9">16:9 (Cinematic)</div>
+      <div class="chip" data-val="9:16">9:16 (Story/Mobile)</div>
+      <div class="chip" data-val="21:9">21:9 (Ultrawide)</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="section-title">
+      <span>✨ Compiled Prompt</span>
+      <span class="badge-toast" id="copyToast">Copied to clipboard!</span>
+    </div>
+    <div class="preview-box" id="promptPreview"></div>
+    <div class="actions">
+      <button class="btn btn-secondary" onclick="copyPrompt()">📋 Copy Prompt</button>
+      <a class="btn btn-primary" id="launchBtn" target="_blank" href="https://www.vistella.xyz/playground">
+        🚀 Launch in Vistella Playground
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    Crafted for <a href="https://www.vistella.xyz" target="_blank">Vistella (星境)</a> • Open-Source Community Resource
+  </footer>
+</div>
+
+<script>
+  function getSelectedChipVal(containerId) {
+    const el = document.querySelector(`#${containerId} .chip.active`);
+    return el ? el.getAttribute('data-val') : '';
+  }
+
+  function setSubject(text) {
+    document.getElementById('subjectInput').value = text;
+    updatePrompt();
+  }
+
+  function setupChipListeners(containerId) {
+    const chips = document.querySelectorAll(`#${containerId} .chip`);
+    chips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        chips.forEach(c => c.classList.remove('active'));
+        chip.classList.add('active');
+        updatePrompt();
+      });
+    });
+  }
+
+  function updatePrompt() {
+    const subject = document.getElementById('subjectInput').value.trim() || 'A beautiful visual creation';
+    const lighting = getSelectedChipVal('lightingChips');
+    const optics = getSelectedChipVal('opticsChips');
+    const color = getSelectedChipVal('colorChips');
+    const ratio = getSelectedChipVal('ratioChips') || '3:4';
+
+    const parts = [subject];
+    if (lighting) parts.push(lighting);
+    if (optics) parts.push(optics);
+    if (color) parts.push(color);
+    parts.push('masterpiece quality');
+
+    const promptText = parts.join(', ') + '.';
+    document.getElementById('promptPreview').textContent = promptText;
+
+    const encoded = encodeURIComponent(promptText);
+    const launchUrl = `https://www.vistella.xyz/playground?utm_source=prompt_studio&prompt=${encoded}`;
+    document.getElementById('launchBtn').href = launchUrl;
+  }
+
+  function copyPrompt() {
+    const text = document.getElementById('promptPreview').textContent;
+    navigator.clipboard.writeText(text).then(() => {
+      const toast = document.getElementById('copyToast');
+      toast.style.opacity = '1';
+      setTimeout(() => { toast.style.opacity = '0'; }, 2000);
+    });
+  }
+
+  document.getElementById('subjectInput').addEventListener('input', updatePrompt);
+  setupChipListeners('lightingChips');
+  setupChipListeners('opticsChips');
+  setupChipListeners('colorChips');
+  setupChipListeners('ratioChips');
+
+  updatePrompt();
+</script>
+
+</body>
+</html>
