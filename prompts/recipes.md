@@ -45,6 +45,21 @@ An East Asian female architect working at a drafting table in an ultra-modern co
 
 👉 [Try on Vistella Playground](https://www.vistella.xyz/en/playground?utm_source=github&utm_medium=prompt_recipe&utm_campaign=visual_recipes&utm_content=architect)
 
+### 1.4 Rainy Tokyo Fashion Editorial
+
+- **Visual Style:** Contemporary street-fashion photography
+- **Recommended Aspect Ratio:** `3:4`
+
+```text
+A confident adult East Asian fashion designer walking through a rainy Tokyo side street at blue hour. Rain-dark pavement, softly defocused shop lights without readable signs, one adult in a tailored charcoal coat with simple silver earrings, natural skin texture and a candid expression. Medium full portrait at eye level, 50mm editorial street photography, cyan and warm amber reflections, soft mist and realistic rain. High-end contemporary fashion editorial photograph. No logos, readable text, watermark or resemblance to a known person.
+```
+
+<img src="assets/rainy-fashion-editorial.webp" alt="Fashion designer in a charcoal coat on a rain-lit Tokyo street" width="360">
+
+*Reference image made for this repository with imagegen; your result will vary.*
+
+👉 [Try on Vistella Playground](https://www.vistella.xyz/en/playground?utm_source=github&utm_medium=prompt_recipe&utm_campaign=visual_recipes&utm_content=rainy_fashion)
+
 ---
 
 ## 🏺 Category 2: Commercial & Product Visualization
@@ -68,6 +83,36 @@ A frosted amber glass skincare bottle placed on a sculpted travertine stone slab
 Floating matte black wireless over-ear headphones, exploded acoustic engineering visual with subtle golden internal components, dark slate background, volumetric rim lighting, crisp raytraced carbon fiber textures, KeyShot render, 8k detail.
 ```
 👉 [Try on Vistella Playground](https://www.vistella.xyz/en/playground?utm_source=github&utm_medium=recipe_product_2)
+
+### 2.3 Lemon Tart Bakery Campaign
+
+- **Visual Style:** Bright editorial food photography
+- **Recommended Aspect Ratio:** `1:1`
+
+```text
+An appetizing artisanal lemon tart with delicate toasted meringue peaks on a handmade ceramic plate, sliced lemon and a linen napkin on a pale stone counter. Close three-quarter tabletop shot; tart fills the frame with one clean area in the upper right for later layout. Tactile pastry detail, bright soft window light, fresh summer morning, lemon yellow, cream and restrained sage. Premium editorial food photography with realistic crumbs and glaze. No text, logo, packaging, watermark or hands.
+```
+
+<img src="assets/lemon-tart-food-ad.webp" alt="Toasted lemon meringue tart on a ceramic plate in soft window light" width="400">
+
+*Reference image made for this repository with imagegen; your result will vary.*
+
+👉 [Try on Vistella Playground](https://www.vistella.xyz/en/playground?utm_source=github&utm_medium=prompt_recipe&utm_campaign=visual_recipes&utm_content=lemon_tart)
+
+### 2.4 Wireless Earbuds Product Launch
+
+- **Visual Style:** Premium industrial-design product render
+- **Recommended Aspect Ratio:** `16:9`
+
+```text
+A premium concept product photograph of compact wireless earbuds and their pebble-shaped charging case. Dark graphite studio surface with subtle brushed aluminum accents and one soft reflection. Three-quarter product view; earbuds and open case are separated enough to read clearly, with crisp silhouette and negative space to the right for later campaign copy. Photorealistic industrial-design render with precise manufacturing details. Sculpted cool rim light plus a small warm highlight, deep but readable shadows; graphite, silver and muted ice blue. No brand, logo, text, watermark or extra products; believable proportions.
+```
+
+<img src="assets/wireless-earbuds-product-concept.webp" alt="Wireless earbuds and charging case on a dark graphite studio surface" width="680">
+
+*Reference image made for this repository with imagegen; your result will vary.*
+
+👉 [Try on Vistella Playground](https://www.vistella.xyz/en/playground?utm_source=github&utm_medium=prompt_recipe&utm_campaign=visual_recipes&utm_content=earbuds)
 
 ---
 
@@ -100,6 +145,57 @@ A massive floating moss-covered ancient castle ruin hovering among drifting past
 *Reference image made for this repository with imagegen; your result will vary.*
 
 👉 [Try on Vistella Playground](https://www.vistella.xyz/en/playground?utm_source=github&utm_medium=prompt_recipe&utm_campaign=visual_recipes&utm_content=citadel)
+
+## 🧳 Category 5: Travel & Campaign Illustration
+
+### 5.1 Amalfi Coast Vintage Travel Poster
+
+- **Visual Style:** Mid-century screen-printed gouache illustration
+- **Recommended Aspect Ratio:** `2:3`
+
+```text
+A mid-century travel-poster illustration of a coastal village on the Amalfi coast at late afternoon. Stacked pastel houses along a cliff, a winding stair, deep-blue sea and one small sailboat, lemon branches framing the lower edge. Bold simplified shapes, clear horizon and large open sky at the top reserved for a title added later. Vintage screen-printed gouache, subtle paper grain, limited palette of coral, lemon, teal, cream and navy. Warm sunny holiday feeling. No text, lettering, logos or watermark.
+```
+
+<img src="assets/amalfi-vintage-travel-poster.webp" alt="Vintage illustrated Amalfi Coast village, lemon branches and blue sea" width="360">
+
+*Reference image made for this repository with imagegen; your result will vary.*
+
+👉 [Try on Vistella Playground](https://www.vistella.xyz/en/playground?utm_source=github&utm_medium=prompt_recipe&utm_campaign=visual_recipes&utm_content=amalfi_poster)
+
+## 🧸 Category 6: Stylized 3D & Game Art
+
+### 6.1 Whale Island Miniature
+
+- **Visual Style:** Tactile clay-and-paper 3D diorama
+- **Recommended Aspect Ratio:** `1:1`
+
+```text
+A tiny floating island shaped like a sleeping whale, carrying a miniature greenhouse village above a sea of clouds. Include a glass conservatory, winding path, miniature trees, waterfalls from the island edge and small warm windows. Isometric three-quarter view, one centered diorama with generous clean background space. Polished tactile clay and paper miniature 3D render, rounded shapes and handmade material character. Soft studio sunlight with gentle shadows; powder blue, cream, moss green and warm amber. No text, logo, watermark or extra islands; keep miniature scale coherent.
+```
+
+<img src="assets/whale-island-miniature.webp" alt="Miniature greenhouse village on the back of a floating whale above clouds" width="400">
+
+*Reference image made for this repository with imagegen; your result will vary.*
+
+👉 [Try on Vistella Playground](https://www.vistella.xyz/en/playground?utm_source=github&utm_medium=prompt_recipe&utm_campaign=visual_recipes&utm_content=whale_diorama)
+
+## 📚 Category 7: Children's Book Illustration
+
+### 7.1 Fox and Firefly
+
+- **Visual Style:** Watercolor and colored-pencil picture-book scene
+- **Recommended Aspect Ratio:** `4:3`
+
+```text
+A small red fox carrying a lantern through a moonlit garden to help a lost firefly find its way home. Oversized cabbage leaves, night-blooming flowers, dew and a tiny cottage far away. Gentle storybook scene with clear foreground, middle ground and background; fox and one glowing firefly are easy to read. Original hand-painted watercolor and colored pencil with soft paper texture and friendly rounded forms. Deep indigo evening, warm lantern glow, calm reassuring mood; midnight blue, sage green, muted orange and cream. Child-friendly, no frightening elements, text, logo, watermark or recognizable existing characters.
+```
+
+<img src="assets/fox-firefly-storybook.webp" alt="Friendly red fox carrying a lantern through a moonlit garden toward a firefly" width="680">
+
+*Reference image made for this repository with imagegen; your result will vary.*
+
+👉 [Try on Vistella Playground](https://www.vistella.xyz/en/playground?utm_source=github&utm_medium=prompt_recipe&utm_campaign=visual_recipes&utm_content=fox_storybook)
 
 ---
 

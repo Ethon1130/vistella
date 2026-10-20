@@ -86,7 +86,7 @@ Explore our categorized recipes with lighting, ratio, and aesthetic breakdowns:
 | **🏛️ Architecture & Spaces** | Brutalist concrete residences, Japanese zen pavilions, Scandinavian kitchens | [Browse Architecture →](prompts/architecture_and_spaces.md) |
 | **🎨 Digital Art & Anime** | Makoto Shinkai skies, Studio Ghibli countryside, retro 80s synthwave, 3D dioramas | [Browse Digital Art →](prompts/digital_art_and_illustration.md) |
 | **🛡️ Negative Prompts** | Specialized exclusions for hands, skin texture, product clarity, and architectural lines | [View Negative Prompts →](prompts/negative_prompts.md) |
-| **🖼️ Visual Gallery** | Four reference scenes, exact imagegen prompts, and reusable social artwork | [Browse Gallery →](prompts/README.md) |
+| **🖼️ Visual Gallery** | Ten reference scenes, exact imagegen prompts, and reusable social artwork | [Browse Gallery →](prompts/README.md) |
 
 ---
 

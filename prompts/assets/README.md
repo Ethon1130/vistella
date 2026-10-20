@@ -1,6 +1,6 @@
 # Visual asset notes
 
-These six images were generated with the built-in imagegen tool on 2026-10-18 for this repository. Five were encoded as WebP for GitHub display; the social preview was resized to 1280 × 640 and encoded as a JPEG for GitHub's repository settings. They are original **reference artwork**, not generations made inside the Vistella Playground. The recipes in [`../recipes.md`](../recipes.md) are starting points; a different model or setting may produce a different image. None of the images contains a Vistella logo or a claim of product output.
+The first four gallery images and two social assets were generated with the built-in imagegen tool on 2026-10-18. Six additional gallery images were generated on 2026-10-20. The gallery and pin images are WebP; the repository social preview is a 1280 × 640 JPEG. They are original **reference artwork**, not generations made inside the Vistella Playground. The recipes in [`../recipes.md`](../recipes.md) are starting points; a different model or setting may produce a different image. None of the images contains a Vistella logo or a claim of product output.
 
 | File | Use | Size |
 | :--- | :--- | :--- |
@@ -10,6 +10,12 @@ These six images were generated with the built-in imagegen tool on 2026-10-18 fo
 | [`floating-citadel-concept.webp`](floating-citadel-concept.webp) | Fantasy recipe and repository banner | 1916 × 821 |
 | [`skincare-vertical-social-pin.webp`](skincare-vertical-social-pin.webp) | Text-free vertical social image | 1024 × 1536 |
 | [`repository-social-preview.jpg`](repository-social-preview.jpg) | GitHub social preview upload | 1280 × 640 |
+| [`rainy-fashion-editorial.webp`](rainy-fashion-editorial.webp) | Fashion editorial recipe | 1086 × 1448 |
+| [`lemon-tart-food-ad.webp`](lemon-tart-food-ad.webp) | Food advertising recipe | 1254 × 1254 |
+| [`amalfi-vintage-travel-poster.webp`](amalfi-vintage-travel-poster.webp) | Travel campaign illustration | 1024 × 1536 |
+| [`whale-island-miniature.webp`](whale-island-miniature.webp) | Stylized 3D / game art recipe | 1254 × 1254 |
+| [`fox-firefly-storybook.webp`](fox-firefly-storybook.webp) | Children's book illustration recipe | 1448 × 1086 |
+| [`wireless-earbuds-product-concept.webp`](wireless-earbuds-product-concept.webp) | Technology product launch recipe | 1672 × 941 |
 
 ## Imagegen prompts used
 
@@ -49,4 +55,42 @@ The imagegen edit target was `floating-citadel-concept.webp`'s original generate
 
 ```text
 Use case: precise-object-edit. Asset type: repository social preview artwork with a wide 2:1 landscape composition. Edit target: the supplied floating-citadel concept image. Primary request: adapt its framing to a clean wide 2:1 social preview while preserving the same ancient floating citadel, waterfalls, moss, pastel sunset clouds and hand-painted fantasy atmosphere. Keep the citadel within the central safe area so it survives social card cropping. Do not add objects, words, logos, UI, frames or watermarks. Preserve the color palette and detailed texture. The only intended change is composition/framing.
+```
+
+## Additional image prompts (2026-10-20)
+
+### Rainy Tokyo fashion editorial
+
+```text
+Use case: photorealistic-natural. Asset type: Vistella prompt gallery example for editorial fashion portrait, portrait 3:4. Primary request: a confident adult East Asian fashion designer walking through a rainy Tokyo side street at blue hour. Scene: rain-dark pavement, soft defocused shop lights without readable signs, city atmosphere. Subject: one adult wearing a tailored charcoal coat and simple silver earrings, natural skin texture and candid expression. Composition: medium full portrait, subject centered with room around the silhouette, eye-level 50mm editorial street photography. Lighting/mood: cinematic cyan and warm amber reflections, soft mist, realistic rain. Style: high-end contemporary fashion editorial photograph. Constraints: fully clothed adult, plausible anatomy, no logos, no readable text, no watermark, no resemblance to a known person.
+```
+
+### Lemon tart food campaign
+
+```text
+Use case: ads-marketing. Asset type: Vistella prompt gallery example for a food campaign, square hero image. Primary request: appetizing artisanal citrus tart advertisement for a small bakery. Scene: a glossy lemon tart with delicate toasted meringue peaks on a handmade ceramic plate, sliced lemon and a linen napkin on a pale stone counter. Composition: close three-quarter tabletop shot, tart fills the frame, one clean area in the upper right for later layout; tactile pastry detail. Lighting/mood: bright soft window light, fresh summer morning. Palette: lemon yellow, cream, restrained sage. Style: premium editorial food photography with realistic crumbs and glaze. Constraints: no text, no logo, no packaging, no watermark, no hands.
+```
+
+### Amalfi travel poster
+
+```text
+Use case: stylized-concept. Asset type: Vistella prompt gallery example for a destination campaign poster background, portrait 2:3. Primary request: a mid-century travel-poster illustration of a coastal village on the Amalfi coast at late afternoon. Scene: stacked pastel houses along a cliff, a winding stair, deep-blue sea and one small sailboat, lemon branches framing the lower edge. Composition: bold simplified shapes, clear horizon and large open sky at the top reserved for a title added later. Style/medium: vintage screen-printed gouache illustration, subtle paper grain, limited ink palette of coral, lemon, teal, cream and navy. Lighting/mood: warm sunny holiday feeling. Constraints: no text, no lettering, no logos, no watermark, avoid photorealism.
+```
+
+### Whale island miniature
+
+```text
+Use case: stylized-concept. Asset type: Vistella prompt gallery example for game key art or app campaign, square 3D illustration. Primary request: a tiny floating island shaped like a sleeping whale, carrying a miniature greenhouse village above a sea of clouds. Scene details: tiny glass conservatory, winding path, a few miniature trees, waterfalls from the island edge, small warm windows. Composition: isometric three-quarter view, single centered diorama with generous clean background space. Style: polished tactile clay and paper miniature 3D render, rounded shapes, handmade material character, not photorealistic. Lighting: soft studio sunlight with gentle shadows. Palette: powder blue, cream, moss green and warm amber. Constraints: no text, no logo, no watermark, no extra islands, coherent miniature scale.
+```
+
+### Fox and firefly picture book
+
+```text
+Use case: illustration-story. Asset type: Vistella prompt gallery example for a children's picture book, landscape 4:3. Primary request: a small red fox carrying a lantern through a moonlit garden to help a lost firefly find its way home. Scene: oversized cabbage leaves, night-blooming flowers, dew, a tiny cottage far away. Composition: gentle storybook scene with clear foreground, middle ground and background; fox and single glowing firefly are easy to read. Style/medium: original hand-painted watercolor and colored pencil, soft paper texture, rounded friendly forms. Lighting/mood: deep indigo evening, warm lantern glow, calm reassuring mood. Palette: midnight blue, sage green, muted orange, cream. Constraints: child-friendly, no frightening elements, no text, no logo, no watermark, no resemblance to any known character or artist.
+```
+
+### Wireless earbuds product launch
+
+```text
+Use case: product-mockup. Asset type: Vistella prompt gallery example for a consumer technology product launch, wide 16:9. Primary request: premium concept product photograph of a compact pair of wireless earbuds and their pebble-shaped charging case. Scene: dark graphite studio surface with subtle brushed aluminum accents and one soft reflection. Composition: three-quarter product view, earbuds and open case separated enough to read clearly, crisp silhouette, negative space to the right for later campaign copy. Style: photorealistic industrial design render, precise manufacturing details, restrained premium aesthetic. Lighting: sculpted cool rim light plus a small warm highlight, deep but readable shadows. Palette: graphite, silver, muted ice blue. Constraints: no brand, no logo, no text, no watermark, no extra products, believable proportions.
 ```

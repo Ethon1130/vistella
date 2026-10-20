@@ -2,7 +2,7 @@
 
 [简体中文](README.zh-CN.md) · [繁體中文](README.zh-TW.md)
 
-Four original reference images to accompany the [copyable prompt recipes](recipes.md), plus two publishing assets. These images were created for this repository with imagegen. They are **visual references, not generations made in the Vistella Playground**; results from any recipe will vary.
+Ten original reference images to accompany the [copyable prompt recipes](recipes.md), plus two publishing assets. These images were created for this repository with imagegen. They are **visual references, not generations made in the Vistella Playground**; results from any recipe will vary.
 
 | Editorial portrait | Product still life |
 | :--- | :--- |
@@ -13,6 +13,23 @@ Four original reference images to accompany the [copyable prompt recipes](recipe
 | :--- | :--- |
 | <img src="assets/bamboo-zen-pavilion.webp" alt="Cedar and glass pavilion beside a reflecting pond in a bamboo grove at twilight" width="350"> | <img src="assets/floating-citadel-concept.webp" alt="Moss-covered floating citadel and waterfalls above pastel sunset clouds" width="350"> |
 | [Japanese zen pavilion: prompt and settings](recipes.md#31-japanese-modern-zen-pavilion) | [Floating citadel: prompt and settings](recipes.md#41-ethereal-floating-citadel) |
+
+## More styles and uses
+
+| Fashion campaign | Food advertising |
+| :--- | :--- |
+| <img src="assets/rainy-fashion-editorial.webp" alt="Fashion designer in a charcoal coat on a rain-lit Tokyo street" width="350"> | <img src="assets/lemon-tart-food-ad.webp" alt="Toasted lemon meringue tart on a ceramic plate in soft window light" width="350"> |
+| [Rainy Tokyo editorial recipe](recipes.md#14-rainy-tokyo-fashion-editorial) | [Lemon tart campaign recipe](recipes.md#23-lemon-tart-bakery-campaign) |
+
+| Travel poster illustration | 3D game art |
+| :--- | :--- |
+| <img src="assets/amalfi-vintage-travel-poster.webp" alt="Vintage illustrated Amalfi Coast village, lemon branches and blue sea" width="350"> | <img src="assets/whale-island-miniature.webp" alt="Miniature greenhouse village on the back of a floating whale above clouds" width="350"> |
+| [Amalfi poster recipe](recipes.md#51-amalfi-coast-vintage-travel-poster) | [Whale island diorama recipe](recipes.md#61-whale-island-miniature) |
+
+| Children's book illustration | Technology product launch |
+| :--- | :--- |
+| <img src="assets/fox-firefly-storybook.webp" alt="Friendly red fox carrying a lantern through a moonlit garden toward a firefly" width="350"> | <img src="assets/wireless-earbuds-product-concept.webp" alt="Wireless earbuds and charging case on a dark graphite studio surface" width="350"> |
+| [Fox and firefly recipe](recipes.md#71-fox-and-firefly) | [Wireless earbuds recipe](recipes.md#24-wireless-earbuds-product-launch) |
 
 ## Try a recipe
 
